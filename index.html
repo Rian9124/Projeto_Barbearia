@@ -13,12 +13,16 @@
     <section class="HOME">
         <header class="cabecalho">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">AGENDA</a></li>
-                <li><a href="">LOCALIZAÇÃO</a></li>
-                <li><a href="">FEEDBACK</a></li>
-                <li><a href="">SOBRE MIM</a></li>
-                <li><a href="https://www.instagram.com/01vg_do_corte?igsh=cjMyamtjZThodDU=" id="instagram" target="_blank"><img src="https://th.bing.com/th/id/R.e323a1c490acd8ad3f84d1d1a6d78c9a?rik=pefjyka5%2fJ2tYA&pid=ImgRaw&r=0" width="30px"></a></li>
+                <li><a href="#HOME">HOME</a></li>
+                <li><a href="#AGENDA">AGENDA</a></li>
+                <li><a href="#LOCALIZAÇÃO">LOCALIZAÇÃO</a></li>
+                <li><a href="#FEEDBACK">FEEDBACK</a></li>
+                <li><a href="#SOBRE_MIM">SOBRE MIM</a></li>
+                <li>
+                    <a href="https://www.instagram.com/01vg_do_corte?igsh=cjMyamtjZThodDU=" id="instagram" target="_blank">
+                        <img src="https://th.bing.com/th/id/R.e323a1c490acd8ad3f84d1d1a6d78c9a?rik=pefjyka5%2fJ2tYA&pid=ImgRaw&r=0" width="30px">
+                    </a>
+                </li>
             </ul>
         </header>
         <div class="logo_1">
@@ -29,15 +33,13 @@
     </section>
 
     <!-- seção agenda -->
-
-    <section class="AGENDA">
+    <section class="AGENDA" id="AGENDA">
         <hr color="black" size="5px" class="linha">
         <div class="titulo-2">
             <h1 id="titulo-2">área de agendamento</h1>
             <img src="Home Agenda Sobre mim Barbearia.png" width="90px">
         </div>
         <h2 id="subtitulo-1">Dias disponíveis</h2>
-        <!-- calendario -->
         <div class="calendario-pai">
             <button id="prev-month">Anterior</button>
             <span id="month-year"></span>
@@ -59,7 +61,7 @@
                 </table>
                 <div class="lg-bt">
                     <img src="https://www.pinclipart.com/picdir/big/486-4869535_logo-whatsapp-branco-png-clipart.png" width="300px" id="icone-whatapp">
-                    <a href="http://Wa.me/+5531982283547" target="_blank"><button id="bt-agenda" >AGENDE SEU HORÁRIO</button></a>
+                    <a href="http://Wa.me/+5531982283547" target="_blank"><button id="bt-agenda">AGENDE SEU HORÁRIO</button></a>
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@
     </section>
     
     <!-- Seção de localização -->
-    <section class="localizacao">
+    <section class="localizacao" id="LOCALIZAÇÃO">
         <hr color="black" size="5px" class="linha">
         <div class="loc">
             <div class="loc-img-text">
@@ -92,11 +94,8 @@
         <br><br><br><br><br><br>
     </section>
 
-    <!-- Seção Feddback -->
-
-    <!-- formulario -->
-
-    <section class="feedback-container">
+    <!-- Seção Feedback -->
+    <section class="feedback-container" id="FEEDBACK">
         <h1>Feedback</h1>
         <div class="feedback-carousel">
             <div class="feedback-card" onclick="selectCard(this)">
@@ -117,7 +116,7 @@
         </div>
         <div class="add-feedback-button" onclick="showFeedbackForm()">+</div>
         <button class="delete-feedback-button" onclick="showAdminPasswordForm()">Excluir Comentário</button>
-    </div>
+    </section>
 
     <!-- Formulário para adicionar feedback -->
     <div id="feedback-form" class="hidden">
@@ -142,7 +141,7 @@
         <input type="password" id="admin-pass" placeholder="Digite a senha">
         <button onclick="verifyAdminPassword()">Confirmar</button>
         <button onclick="hideAdminPasswordForm()">Cancelar</button>
-    </section>    
+    </div>    
 
     <button onclick="scrollToTop()" id="scrollToTopBtn"><img src="seta-para-cima (1).png" alt="st-rolagem" width="50px" id="img-bt"></button>
     <script src="index.js"></script>

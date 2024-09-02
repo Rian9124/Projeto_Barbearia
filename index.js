@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let today = new Date();
     let currentMonth = today.getMonth() + 1; // +1 para ajustar a contagem (1-12)
     let currentYear = today.getFullYear();
+    let currentAvailabilityState = true; // true = pares disponíveis, false = ímpares disponíveis
 
     // Função para verificar se o dia é sábado ou domingo
     function isWeekend(day, month, year) {
@@ -13,21 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Função para determinar se um dia está disponível
     function isAvailable(day, month, year) {
-        const isEvenMonth = (month % 2 === 0); // Meses pares
         const isDayEven = (day % 2 === 0); // Dia par
 
         if (isWeekend(day, month, year)) {
             return true; // Sábados e domingos sempre disponíveis
         }
 
-        // Alternância mensal
-        if (isEvenMonth) {
-            // Meses pares (Fevereiro, Abril, Junho, Agosto, Outubro, Dezembro): Dias ímpares são disponíveis
-            return !isDayEven; // Disponível se o dia for ímpar
-        } else {
-            // Meses ímpares (Janeiro, Março, Maio, Julho, Setembro, Novembro): Dias pares são disponíveis
-            return isDayEven; // Disponível se o dia for par
-        }
+        // Alternância de disponibilidade
+        return currentAvailabilityState ? isDayEven : !isDayEven;
+    }
+
+    // Função para alternar o estado de disponibilidade ao mudar o mês
+    function toggleAvailabilityState() {
+        currentAvailabilityState = !currentAvailabilityState;
     }
 
     // Função para gerar o calendário
@@ -81,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
             currentMonth = 12;
             currentYear--;
         }
+        toggleAvailabilityState(); // Alterna o estado de disponibilidade ao mudar de mês
         generateCalendar(currentMonth, currentYear);
     }
 
@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
             currentMonth = 1;
             currentYear++;
         }
+        toggleAvailabilityState(); // Alterna o estado de disponibilidade ao mudar de mês
         generateCalendar(currentMonth, currentYear);
     }
 
@@ -100,11 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Inicializar o calendário com o mês atual
     generateCalendar(currentMonth, currentYear);
 });
-
-// Função para rolar para o topo da página
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
 // Mostrar ou ocultar o botão de rolagem para o topo
 window.onscroll = function() {
@@ -221,3 +217,10 @@ function addFeedback() {
 
     hideFeedbackForm();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // Adicionando evento de clique para rolar para o topo
+    document.querySelector('#scrollToTopBtn').addEventListener('click', scrollToTop)});
