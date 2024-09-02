@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto_Barbearia_2.0</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/itc-benguiat-std? styles=64884">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:WGHT@600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbearia</title>
 </head>
 <body>
-    <h1>Olá Mundo</h1>
-</body>
+    <!-- Seção Home -->
+    <section class="HOME">
+        <header class="cabecalho">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">AGENDA</a></li>
+                <li><a href="">LOCALIZAÇÃO</a></li>
+                <li><a href="">FEEDBACK</a></li>
+                <li><a href="">SOBRE MIM</a></li>
+                <li><a href="https://www.instagram.com/01vg_do_corte?igsh=cjMyamtjZThodDU=" id="instagram" target="_blank"><img src="https://th.bing.com/th/id/R.e323a1c490acd8ad3f84d1d1a6d78c9a?rik=pefjyka5%2fJ2tYA&pid=ImgRaw&r=0" width="30px"></a></li>
+            </ul>
+        </header>
+        <div class="logo_1">
+            <h1 id="text_titulo">VICTOR <br>BARBER´S <br> SHOP</h1>
+            <img src="20240829_170935_0000.png" width="400px" id="logo_1">
+            <br><br><br><br><br><br>
+        </div>
+    </section>
+
+    <!-- seção agenda -->
+
+    <section class="AGENDA">
+        <hr color="black" size="5px" class="linha">
+        <div class="titulo-2">
+            <h1 id="titulo-2">área de agendamento</h1>
+            <img src="Home Agenda Sobre mim Barbearia.png" width="90px">
+        </div>
+        <h2 id="subtitulo-1">Dias disponíveis</h2>
+        <!-- calendario -->
+        <div class="calendario-pai">
+            <button id="prev-month">Anterior</button>
+            <span id="month-year"></span>
+            <button id="next-month">Próximo</button>
+            <div class="cd-lg-bt">
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="lg-bt">
+                    <img src="https://www.pinclipart.com/picdir/big/486-4869535_logo-whatsapp-branco-png-clipart.png" width="300px" id="icone-whatapp">
+                    <a href="http://Wa.me/+5531982283547" target="_blank"><button id="bt-agenda" >AGENDE SEU HORÁRIO</button></a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+
+    <!-- Seção Conversão -->
+    <section class="secao-conversao">
+        <hr color="black" size="5px">
+        <h1 id="titulo-3">Que tal aproveitar uma estrutura de <br> <span id="text-lr"> Qualidade e um Atendimento Excepcional? </span></h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    
+    <!-- Seção de localização -->
+    <section class="localizacao">
+        <hr color="black" size="5px" class="linha">
+        <div class="loc">
+            <div class="loc-img-text">
+                <img src="local 3.png" alt="localizacao" width="350px">
+                <h1 id="titulo-loc">Onde me encontrar</h1>
+            </div>
+            <div class="loc-img-bt">
+                <img src="Cópia de Home Agenda Sobre mim Barbearia.png" width="500px" id="img-slide">
+                <div class="bt-click">
+                    <button id="bt-loc">Ver no mapa</button>
+                    <img src="click.png" width="100px" id="click">
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+
+    <!-- Seção Feddback -->
+
+    <!-- formulario -->
+
+    <section class="feedback-container">
+        <h1>Feedback</h1>
+        <div class="feedback-carousel">
+            <div class="feedback-card" onclick="selectCard(this)">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="stars">★★★★★</div>
+                <p class="name">Nome</p>
+            </div>
+            <div class="feedback-card" onclick="selectCard(this)">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="stars">★★★★☆</div>
+                <p class="name">Nome</p>
+            </div>
+            <div class="feedback-card" onclick="selectCard(this)">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="stars">★★★☆☆</div>
+                <p class="name">Nome</p>
+            </div>
+        </div>
+        <div class="add-feedback-button" onclick="showFeedbackForm()">+</div>
+        <button class="delete-feedback-button" onclick="showAdminPasswordForm()">Excluir Comentário</button>
+    </div>
+
+    <!-- Formulário para adicionar feedback -->
+    <div id="feedback-form" class="hidden">
+        <h2>Adicionar Comentário</h2>
+        <input type="text" id="name" placeholder="Seu nome">
+        <label for="rating">Nota:</label>
+        <select id="rating">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★☆</option>
+            <option value="3">★★★☆☆</option>
+            <option value="2">★★☆☆☆</option>
+            <option value="1">★☆☆☆☆</option>
+        </select>
+        <textarea id="comment-text" placeholder="Escreva seu comentário"></textarea>
+        <button onclick="addFeedback()">Adicionar</button>
+        <button onclick="hideFeedbackForm()">Cancelar</button>
+    </div>
+
+    <!-- Janela de senha do administrador -->
+    <div id="admin-password" class="hidden">
+        <h2>Senha do Administrador</h2>
+        <input type="password" id="admin-pass" placeholder="Digite a senha">
+        <button onclick="verifyAdminPassword()">Confirmar</button>
+        <button onclick="hideAdminPasswordForm()">Cancelar</button>
+    </section>    
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn"><img src="seta-para-cima (1).png" alt="st-rolagem" width="50px" id="img-bt"></button>
+    <script src="index.js"></script>
+</body> 
 </html>

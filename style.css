@@ -1,0 +1,397 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/fotos-premium/grande-conjunto-de-ferramentas-de-barbeiro-preto-profissional-conceito-de-cabeleireiro-de-barbearia_275559-24793.jpg?w=950);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.linha{
+    margin: 0;
+}
+    /* Home */
+.HOME header ul{
+    background-color: black;
+    color: #ED8B00;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    list-style: none;
+    padding: 15px;
+    margin: -8px;
+    font-family: 'SUSE',sans-serif;
+}
+#instagram{
+    position: absolute;
+}
+#logo_1{
+    margin-left: 705px;
+    margin-top: 160px;
+}
+section .logo_1 #text_titulo{
+    font-family: 'ITC Benguiat Std',sans-serif;
+    color: #ED8B00;
+    font-size: 70px;
+    top: 281px ;
+    left: 655px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 60px;
+}
+.cabecalho-agenda{
+    background-color: black;
+    color: #ED8B00;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    list-style: none;
+    padding: 15px;
+    margin: -8px;
+    font-family: 'SUSE',sans-serif;
+}
+header ul li a{
+    color: #ED8B00;
+    transition: 0.80 ease;
+    text-decoration: none;
+}
+header ul li a:hover{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Seção Agenda */
+
+.AGENDA{ 
+    color: white;
+    margin: -8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-2{
+    padding-right: 10px;
+    font-size: 45px;
+}
+#subtitulo-1{
+    padding-top: 30px;
+    padding-left: 250px;
+    font-size: 40px;
+}
+
+/* calendario */
+
+.calendario-pai{
+    padding-left: 160px;
+}
+.cd-lg-bt{
+    display: flex;
+}
+.lg-bt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+#bt-agenda {
+    background-color: #ED8B00;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 20px 40px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    animation: pulsar 1.5s infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#bt-agenda:hover{
+    background-color: black;
+    color: white;
+} 
+table {
+    width: 450px;
+    border-collapse: collapse;
+}
+table tr th{
+    border: 1px solid #ffffff;
+    color: black;
+}
+th {
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: #000;
+}
+.available {
+    background-color: #90EE90;
+}
+.unavailable {
+    background-color: #FF6347;
+}
+
+.today {
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+/* botao rola pra cima */
+
+#scrollToTopBtn{
+    background-color: #31313100;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+#scrollToTopBtn:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+/* Seção Conversão */
+
+.secao-conversao{
+    background: rgb(255,255,255);
+    background: linear-gradient(181deg, rgba(255,255,255,1) 75%, rgba(0,0,0,1) 100%);
+    margin: -8px;
+    margin-top: -18px;
+}
+#titulo-3{
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  flex-direction: column;
+}
+#text-lr{
+    color: #ED8B00;
+}
+
+/* Seção de localização */
+
+.localizacao{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Home\ Agenda\ Sobre\ mim\ Barbearia\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    margin: -8px;
+    margin-top: -18px;
+    overflow: hidden;
+}
+.loc{
+    display: flex;
+}
+.loc-img-text{
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 240px;
+}
+#titulo-loc{
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+.bt-click{
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+}
+.loc-img-bt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 800px;
+}
+#img-slide{
+    position: relative;
+    overflow: hidden;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+#bt-loc{
+    background-color: #ED8B00;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 18px 50px;
+    font-size: 25px;
+    cursor:pointer;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    animation: pulsar 1s infinite;
+}
+#bt-loc:hover{
+    background-color: #000000;
+    color: white;
+}
+#click{
+    position: absolute;
+    left: 200px;    
+    right: 1%;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: pulsar 1s infinite;
+}
+
+    /* Feedback */
+    
+    .feedback-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+        margin: -8px;
+        background-color: #f4f4f4;
+    }
+    
+    .fed {
+        text-align: center;
+    }
+    
+    .feedback-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 600px;
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+    }
+    
+    .feedback-card {
+        background-color: #707070;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+        flex-shrink: 0;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .feedback-card.selected {
+        border: 2px solid #FFD700;
+    }
+    
+    .stars {
+        font-size: 20px;
+        color: #ffcc00;
+    }
+    
+    .name {
+        margin-top: 10px;
+    }
+    
+    .add-feedback-button {
+        background-color: #FFA500;
+        color: white;
+        font-size: 24px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+    
+    .add-feedback-button:hover {
+        background-color: #FF8C00;
+    }
+    
+    .delete-feedback-button {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px auto;
+    }
+    
+    .delete-feedback-button:hover {
+        background-color: darkred;
+    }
+    
+    /* Formulário para adicionar feedback */
+    #feedback-form,
+    #admin-password {
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        padding: 20px;
+        border-radius: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #feedback-form.hidden,
+    #admin-password.hidden {
+        display: none;
+    }
+    
+    #feedback-form textarea,
+    #feedback-form input,
+    #feedback-form select,
+    #admin-password input {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #feedback-form button,
+    #admin-password button {
+        background-color: #8B4513;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+    #feedback-form button:hover,
+    #admin-password button:hover {
+        background-color: #A0522D;
+    }
