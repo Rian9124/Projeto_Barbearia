@@ -1,43 +1,77 @@
+// Documento js para funções
 document.addEventListener("DOMContentLoaded", function() {
-    const calendar = document.getElementById("calendar").getElementsByTagName("tbody")[0];
-    const monthYear = document.getElementById("month-year");
-    let today = new Date();
-    let currentMonth = today.getMonth() + 1; // +1 para ajustar a contagem (1-12)
-    let currentYear = today.getFullYear();
-    let currentAvailabilityState = true; // true = pares disponíveis, false = ímpares disponíveis
+    const btAgenda = document.getElementById("bt-agenda");
+    const btAgenda2 = document.getElementById("bt-agenda2");
+    const calendarContainer = document.getElementById("calendar-container");
+    const tituloAgenda = document.getElementById("titulo-agenda");
+    const lgBt = document.querySelector(".lg-bt");
+    const loginScreen = document.getElementById("login-screen");
+    const setup = document.getElementById("setup");
+    const saveScheduleButton = document.getElementById("save-schedule");
+    const resetScheduleButton = document.getElementById("reset-schedule");
+    const daysContainer = document.getElementById("days");
+    const monthYearSpan = document.getElementById("month-year");
+    const tbody = document.querySelector("#calendar tbody");
+    const monthInput = document.getElementById("month");
+    const cdLgBt = document.querySelector(".cd-lg-bt");
 
-    // Função para verificar se o dia é sábado ou domingo
-    function isWeekend(day, month, year) {
-        const dayOfWeek = new Date(year, month - 1, day).getDay(); // Ajuste para indexação de mês
-        return dayOfWeek === 0 || dayOfWeek === 6; // 0 = Domingo, 6 = Sábado
-    }
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+    let unavailableDays = loadUnavailableDays();
 
-    // Função para determinar se um dia está disponível
-    function isAvailable(day, month, year) {
-        const isDayEven = (day % 2 === 0); // Dia par
+    // Eventos para botões
+    btAgenda.addEventListener("click", function() {
+        tituloAgenda.style.display = "none";
+        lgBt.style.display = "none";
+        calendarContainer.style.display = "block";
+    });
 
-        if (isWeekend(day, month, year)) {
-            return true; // Sábados e domingos sempre disponíveis
+    btAgenda2.addEventListener("click", function() {
+        loginScreen.style.display = "flex";
+    });
+
+    document.getElementById("login-button").addEventListener("click", function() {
+        const password = document.getElementById("password").value;
+        if (password === "1234") {
+            setup.style.display = "block";
+            loginScreen.style.display = "none";
+        } else {
+            alert("Senha incorreta!");
         }
+    });
 
-        // Alternância de disponibilidade
-        return currentAvailabilityState ? isDayEven : !isDayEven;
+    function generateDays() {
+        daysContainer.innerHTML = "";
+        for (let i = 1; i <= 31; i++) {
+            const day = document.createElement("div");
+            day.classList.add("day");
+            day.textContent = i;
+
+            day.addEventListener("click", function() {
+                day.classList.toggle("selected");
+                const dayNumber = parseInt(day.textContent);
+                toggleDaySelection(dayNumber);
+                updateCalendarDays();
+                saveUnavailableDays();
+            });
+            daysContainer.appendChild(day);
+        }
     }
 
-    // Função para alternar o estado de disponibilidade ao mudar o mês
-    function toggleAvailabilityState() {
-        currentAvailabilityState = !currentAvailabilityState;
+    function toggleDaySelection(dayNumber) {
+        if (unavailableDays[currentMonth].includes(dayNumber)) {
+            unavailableDays[currentMonth] = unavailableDays[currentMonth].filter(d => d !== dayNumber);
+        } else {
+            unavailableDays[currentMonth].push(dayNumber);
+        }
     }
 
-    // Função para gerar o calendário
     function generateCalendar(month, year) {
-        const firstDay = new Date(year, month - 1).getDay(); // Ajuste para indexação de mês
-        const daysInMonth = new Date(year, month, 0).getDate(); // Total de dias no mês
-
-        calendar.innerHTML = "";
-        monthYear.textContent = `${new Date(year, month - 1).toLocaleString('default', { month: 'long' })} ${year}`;
-
+        const firstDay = new Date(year, month).getDay();
+        const lastDate = new Date(year, month + 1, 0).getDate();
         let date = 1;
+
+        tbody.innerHTML = "";
 
         for (let i = 0; i < 6; i++) {
             const row = document.createElement("tr");
@@ -46,90 +80,130 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (i === 0 && j < firstDay) {
                     const cell = document.createElement("td");
                     row.appendChild(cell);
-                } else if (date > daysInMonth) {
+                } else if (date > lastDate) {
                     break;
                 } else {
                     const cell = document.createElement("td");
-                    cell.textContent = date;
+                    cell.innerText = date;
 
-                    // Determina se o dia é disponível
-                    if (isAvailable(date, month, year)) {
-                        cell.classList.add("available");
-                    } else {
-                        cell.classList.add("unavailable");
+                    if (unavailableDays[month].includes(date)) {
+                        cell.classList.add("selected");
                     }
 
-                    // Destacar o dia atual
-                    if (date === today.getDate() && year === today.getFullYear() && month === currentMonth) {
-                        cell.classList.add("today");
-                    }
-
+                    cell.addEventListener("click", function() {
+                        cell.classList.toggle("selected");
+                        toggleDaySelection(date);
+                        updateCalendarDays();
+                        saveUnavailableDays();
+                    });
                     row.appendChild(cell);
                     date++;
                 }
             }
-
-            calendar.appendChild(row);
+            tbody.appendChild(row);
         }
+
+        monthYearSpan.innerText = new Date(year, month).toLocaleString("pt-BR", { month: "long", year: "numeric" });
     }
 
-    // Funções para navegar entre meses
-    function previousMonth() {
-        currentMonth--;
-        if (currentMonth < 1) {
-            currentMonth = 12;
-            currentYear--;
-        }
-        toggleAvailabilityState(); // Alterna o estado de disponibilidade ao mudar de mês
+    document.getElementById("prev-month").addEventListener("click", function() {
+        currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
         generateCalendar(currentMonth, currentYear);
-    }
+    });
 
-    function nextMonth() {
-        currentMonth++;
-        if (currentMonth > 12) {
-            currentMonth = 1;
-            currentYear++;
-        }
-        toggleAvailabilityState(); // Alterna o estado de disponibilidade ao mudar de mês
+    document.getElementById("next-month").addEventListener("click", function() {
+        currentMonth = (currentMonth === 11) ? 0 : currentMonth + 1;
         generateCalendar(currentMonth, currentYear);
+    });
+
+    saveScheduleButton.addEventListener("click", function() {
+        if (monthInput.value) {
+            const selectedMonthYear = new Date(monthInput.value);
+            currentMonth = selectedMonthYear.getMonth();
+            currentYear = selectedMonthYear.getFullYear();
+            generateCalendar(currentMonth, currentYear);
+        }
+    });
+
+    resetScheduleButton.addEventListener("click", function() {
+        localStorage.removeItem(`unavailableDays_${currentYear}`);
+        unavailableDays = loadUnavailableDays();
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    function updateCalendarDays() {
+        const calendarCells = tbody.querySelectorAll("td");
+        calendarCells.forEach(cell => {
+            const dayNumber = parseInt(cell.innerText);
+            if (unavailableDays[currentMonth].includes(dayNumber)) {
+                cell.classList.add("selected");
+            } else {
+                cell.classList.remove("selected");
+            }
+        });
+        updateCalendarBackground();
     }
 
-    // Event listeners para botões de navegação
-    document.getElementById("prev-month").addEventListener("click", previousMonth);
-    document.getElementById("next-month").addEventListener("click", nextMonth);
+    function updateCalendarBackground() {
+        const days = cdLgBt.querySelectorAll("td");
+        days.forEach(day => {
+            const dayNumber = parseInt(day.innerText);
+            if (unavailableDays[currentMonth].includes(dayNumber)) {
+                day.style.backgroundColor = 'red'; // Cor para dias indisponíveis
+                day.style.color = 'white';
+            } else {
+                day.style.backgroundColor = 'lightgreen'; // Cor para dias disponíveis
+                day.style.color = 'black';
+            }
+        });
+    }
 
-    // Inicializar o calendário com o mês atual
+    function saveUnavailableDays() {
+        localStorage.setItem(`unavailableDays_${currentYear}`, JSON.stringify(unavailableDays));
+    }
+
+    function loadUnavailableDays() {
+        const savedDays = localStorage.getItem(`unavailableDays_${currentYear}`);
+        const data = savedDays ? JSON.parse(savedDays) : {};
+        for (let month = 0; month < 12; month++) {
+            if (!data[month]) {
+                data[month] = [];
+            }
+        }
+        return data;
+    }
+
+    generateDays();
     generateCalendar(currentMonth, currentYear);
 });
 
-// Mostrar ou ocultar o botão de rolagem para o topo
-window.onscroll = function() {
-    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-};
 
-// animação imagem
 
-window.addEventListener('scroll', function() {
-    const imagem = document.querySelector('#img-slide');
-    const position = imagem.getBoundingClientRect().bottom;
-    const windowHeight = window.innerHeight;
 
-    if (position < windowHeight && position > 0) {
-        imagem.style.right = '0px';
-        imagem.style.opacity = '1';
-    } else {
-        // Se a imagem não estiver visível na tela
-        imagem.style.right = '-100px';
-        imagem.style.opacity = '0';
-    }
-});
 
-// formulários
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Inicio do Feedback
 
 const carousel = document.querySelector('.feedback-carousel');
 let scrollAmount = 0;
@@ -139,7 +213,7 @@ function scrollCarousel() {
     const maxScroll = carousel.scrollWidth - carousel.clientWidth;
     scrollAmount += 1;
     if (scrollAmount >= maxScroll) {
-        scrollAmount = 0;
+        scrollAmount = 0; 
     }
     carousel.scrollLeft = scrollAmount;
 }
@@ -217,10 +291,3 @@ function addFeedback() {
 
     hideFeedbackForm();
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    // Adicionando evento de clique para rolar para o topo
-    document.querySelector('#scrollToTopBtn').addEventListener('click', scrollToTop)});

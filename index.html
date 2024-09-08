@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/itc-benguiat-std? styles=64884">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:WGHT@600&display=swap">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="v-barber-shop-high-resolution-logo-transparent.png" type="image/x-icon">
     <title>Barbearia</title>
 </head>
 <body>
@@ -26,46 +27,11 @@
             </ul>
         </header>
         <div class="logo_1">
+            <img src="imagens/v-barber-shop-high-resolution-logo-transparent.png" width="300px" id="lg-pr">
             <h1 id="text_titulo">VICTOR <br>BARBER´S <br> SHOP</h1>
-            <img src="20240829_170935_0000.png" width="400px" id="logo_1">
+            <img src="imagens/20240829_170935_0000.png" width="400px" id="logo_1">
             <br><br><br><br><br><br>
         </div>
-    </section>
-
-    <!-- seção agenda -->
-    <section class="AGENDA" id="AGENDA">
-        <hr color="black" size="5px" class="linha">
-        <div class="titulo-2">
-            <h1 id="titulo-2">área de agendamento</h1>
-            <img src="Home Agenda Sobre mim Barbearia.png" width="90px">
-        </div>
-        <h2 id="subtitulo-1">Dias disponíveis</h2>
-        <div class="calendario-pai">
-            <button id="prev-month">Anterior</button>
-            <span id="month-year"></span>
-            <button id="next-month">Próximo</button>
-            <div class="cd-lg-bt">
-                <table id="calendar">
-                    <thead>
-                        <tr>
-                            <th>Dom</th>
-                            <th>Seg</th>
-                            <th>Ter</th>
-                            <th>Qua</th>
-                            <th>Qui</th>
-                            <th>Sex</th>
-                            <th>Sáb</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <div class="lg-bt">
-                    <img src="https://www.pinclipart.com/picdir/big/486-4869535_logo-whatsapp-branco-png-clipart.png" width="300px" id="icone-whatapp">
-                    <a href="http://Wa.me/+5531982283547" target="_blank"><button id="bt-agenda">AGENDE SEU HORÁRIO</button></a>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br><br><br>
     </section>
 
     <!-- Seção Conversão -->
@@ -74,20 +40,136 @@
         <h1 id="titulo-3">Que tal aproveitar uma estrutura de <br> <span id="text-lr"> Qualidade e um Atendimento Excepcional? </span></h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- Seção Agenda -->
+<section class="AGENDA" id="AGENDA">
+    <hr color="black" size="5px">
+
+    <button id="bt-agenda2"><img src="imagens/agenda.png" width="35px" alt="Ícone Agenda"></button>
+    <div class="titulo-2">
+        <h1 id="titulo-2">Área de Agendamento</h1>
+        <img src="imagens/Home Agenda Sobre mim Barbearia.png" width="90px" alt="Ícone Agenda">
+    </div>
+
+    <!-- Tela de Login -->
+    <div id="login-screen">
+        <label for="password">Digite a senha:</label>
+        <input type="password" id="password">
+        <button id="login-button">Entrar</button>
+    </div>
+
+    <!-- Interface de Configuração (escondida até login) -->
+    <div id="setup" style="display: none;">
+        <h1 id="page-title">Agenda do Barbeiro</h1>
+        <div class="config-agend">
+            <h2>Calendário</h2>
+            <label for="month">Selecione o mês:</label>
+            <input type="month" id="month" name="month">
+            
+            <div id="days-container">
+                <label for="days">Selecione os dias disponíveis:</label>
+                <div id="days"></div>
+            </div>
+            <button id="save-schedule">Salvar o Calendário</button>
+            <button id="reset-schedule">Resetar</button>
+        </div>
+    </div>
+
+    <div id="available-times">
+        <h1 id="info-whatapp">Após a finalização do agendamento<br>você será redirecionado ao WhatsApp<br>com o dia e horário desejado</h1>
+        <div class="form-agendamento">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome-agenda">
+            <h4 id="text-agenda">Eu trabalho das 14:00 H às 19:00 H <br>Qual horário você deseja:</h4>
+                <label for="data-agendamento">Data:</label>
+                <input type="date" id="data-agendamento">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="14:00" max="19:00"><br><br>
+                <textarea name="comentário" id="comentario" rows="5" cols="40" placeholder="Digite uma Observação"></textarea>
+        </div>
+    </div>
+
+    <div class="calendario-pai">
+        <div class="lg-bt">
+            <button id="bt-agenda">AGENDE SEU HORÁRIO</button>
+
+            <!-- Calendário -->
+            <div class="cd-lg-bt">
+                <h2 id="text-calendario">Click sobre o calendário <br> para visualizar os dias disponíveis</h2>
+                <button id="prev-month">Anterior</button>
+                <span id="month-year"></span>
+                <button id="next-month">Próximo</button>
+                <abbr title="Horário de funcionamento das 14h as 19h">
+                    <table id="calendar">
+                        <thead>
+                            <tr>
+                                <th>Dom</th>
+                                <th>Seg</th>
+                                <th>Ter</th>
+                                <th>Qua</th>
+                                <th>Qui</th>
+                                <th>Sex</th>
+                                <th>Sáb</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </abbr>
+            </div>
+        </div>
+        <img src="https://www.pinclipart.com/picdir/big/486-4869535_logo-whatsapp-branco-png-clipart.png" width="230px" id="icone-whatsapp" alt="Ícone WhatsApp">
+        <img src="imagens/barbershopcuston1.png" id="barbericon" width="300px">
+    </div>
+    <br><br><br><br><br><br><br>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <!-- Seção de localização -->
     <section class="localizacao" id="LOCALIZAÇÃO">
         <hr color="black" size="5px" class="linha">
         <div class="loc">
             <div class="loc-img-text">
-                <img src="local 3.png" alt="localizacao" width="350px">
+                <img src="imagens/local 3.png" alt="localizacao" width="350px">
                 <h1 id="titulo-loc">Onde me encontrar</h1>
             </div>
             <div class="loc-img-bt">
-                <img src="Cópia de Home Agenda Sobre mim Barbearia.png" width="500px" id="img-slide">
+                <img src="imagens/Cópia de Home Agenda Sobre mim Barbearia.png" width="500px" id="img-slide">
                 <div class="bt-click">
                     <button id="bt-loc">Ver no mapa</button>
-                    <img src="click.png" width="100px" id="click">
+                    <img src="imagens/click.png" width="100px" id="click">
                 </div>
             </div>
         </div>
@@ -115,7 +197,7 @@
             </div>
         </div>
         <div class="add-feedback-button" onclick="showFeedbackForm()">+</div>
-        <button class="delete-feedback-button" onclick="showAdminPasswordForm()">Excluir Comentário</button>
+        <button class="delete-feedback-button" id="img-lixeira" onclick="showAdminPasswordForm()"><img src="lixeira-de-reciclagem.png" width="35px"></button>
     </section>
 
     <!-- Formulário para adicionar feedback -->
@@ -143,7 +225,9 @@
         <button onclick="hideAdminPasswordForm()">Cancelar</button>
     </div>    
 
-    <button onclick="scrollToTop()" id="scrollToTopBtn"><img src="seta-para-cima (1).png" alt="st-rolagem" width="50px" id="img-bt"></button>
+    <button onclick="scrollToTop()" id="scrollToTopBtn"><img src="imagens/seta-para-cima (1).png" alt="st-rolagem" width="50px" id="img-bt"></button>
+
+    <script src="animações.js"></script>
     <script src="index.js"></script>
 </body> 
 </html>

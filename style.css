@@ -21,6 +21,11 @@ body{
 #instagram{
     position: absolute;
 }
+#lg-pr{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
 #logo_1{
     margin-left: 705px;
     margin-top: 160px;
@@ -56,127 +61,6 @@ header ul li a:hover{
     padding: 20px;
     background-color: rgb(255, 255, 255);
 }
-
-/* Seção Agenda */
-
-.AGENDA{ 
-    color: white;
-    margin: -8px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.titulo-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#titulo-2{
-    padding-right: 10px;
-    font-size: 45px;
-}
-#subtitulo-1{
-    padding-top: 30px;
-    padding-left: 250px;
-    font-size: 40px;
-}
-
-/* calendario */
-
-.calendario-pai{
-    padding-left: 160px;
-}
-.cd-lg-bt{
-    display: flex;
-}
-.lg-bt{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 200px;
-}
-#bt-agenda {
-    background-color: #ED8B00;
-    color: rgb(0, 0, 0);
-    border-radius: 30px;
-    border: 1px solid black;
-    padding: 20px 40px;
-    cursor:pointer;
-    transition: background-color 0.3s ease;
-    animation: pulsar 1.5s infinite;
-}
-
-@keyframes pulsar {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-#bt-agenda:hover{
-    background-color: black;
-    color: white;
-} 
-table {
-    width: 450px;
-    border-collapse: collapse;
-}
-table tr th{
-    border: 1px solid #ffffff;
-    color: black;
-}
-th {
-    background-color: #e6e6e6;
-    padding: 10px;
-}
-td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-    color: #000;
-}
-.available {
-    background-color: #90EE90;
-}
-.unavailable {
-    background-color: #FF6347;
-}
-
-.today {
-    font-weight: bold;
-    border: 2px solid #000;
-}
-
-/* botao rola pra cima */
-
-#scrollToTopBtn{
-    background-color: #31313100;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease-in-out;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-
-}
-#scrollToTopBtn:hover{
-    background-color: rgb(155, 155, 155);
-}
-
-/* Seção Conversão */
-
 .secao-conversao{
     background: rgb(255,255,255);
     background: linear-gradient(181deg, rgba(255,255,255,1) 75%, rgba(0,0,0,1) 100%);
@@ -193,10 +77,289 @@ td {
     color: #ED8B00;
 }
 
+
+
+
+
+
+
+
+/* Seção Agenda */
+.AGENDA {
+    color: white;
+    margin: -8px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-2 {
+    padding-right: 10px;
+    font-size: 45px;
+}
+.lg-bt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(260deg, rgba(0,0,0,1) 41%, rgba(255,0,0,1) 100%);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 530px;
+    padding: 260px 320px;
+    box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+}
+#icone-whatsapp {
+    position: absolute;
+    top: 1250px;
+    margin-left: 150px;
+}
+
+/* Tela de Agendamento */
+#available-times {
+    position: absolute;
+    left: 650px;
+    padding-top: 160px;
+}
+.form-agendamento{
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+input, textarea {
+    border: 2px solid #333; 
+    border-radius: 5px; 
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+input[type="date"] {
+    position:relative;
+    z-index: 10;
+}
+input[type="time"] {
+    position:relative;
+    z-index: 10;
+}
+#info-whatapp {
+    position: absolute;
+    bottom: 350px;
+    background-color: #f9f9f9;
+    color: #000;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+#nome-agenda{
+    padding: 10px;
+    padding-right: 100px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+#bt-agenda {
+    position: absolute;
+    left: 940px;
+    margin-top: 213px;
+    background-color: #ED8B00;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulsar 1s infinite;
+}
+
+#bt-agenda:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+}
+.calendario-pai {
+    display: flex;
+}
+.calendario {
+    position: absolute;
+    background-color: #FF8C00;
+    margin-top: 30px;
+    margin-left: 800px;
+    padding: 230px 190px;
+}
+#bt-agenda2 {
+    position: absolute;
+    margin-top: 10px;
+    left: 10px;
+    background-color: #070605;
+    border: none;
+    cursor: pointer;
+}
+#calendar-container {
+    display: none;
+}
+#barbericon{
+    display: inline-block;
+    position: absolute;
+    left: 962px;
+    top: 1285px;
+    transform: rotate(-1deg);
+}
+#text-calendario{
+    position: relative;
+    text-align: center;
+    right: 468px;
+}
+
+/* Tela de Login */
+#login-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+#login-screen label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Tela de Configuração do Calendário */
+#setup {
+    display: none;
+    background-color: #FF8C00;
+    padding: 10px;
+    color: #000;
+    position:relative;
+    z-index: 10;
+}
+#calendar.selected {
+    background-color: green; /* Cor verde para dias selecionados */
+    color: white;
+}
+#page-title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Configurações adicionais do calendário */
+#days-container {
+    margin: 10px 0;
+}
+#days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.day {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.day.selected {
+    background-color: red;
+    color: white;
+}
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+#calendar div {
+    padding: 10px;
+    background-color: #dbdbdb;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+#calendar div.selected {
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+#time-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#time-options input {
+    width: 100px;
+}
+.config-agend {
+    font-size: 20px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+/* Estilo da tabela */
+.cd-lg-bt {
+    position: absolute;
+    font-size: 15px;
+    top: 1500px;
+    left: 80px;
+    transition: background-color 0.3s ease;
+}
+table {
+    border-collapse: collapse;
+}
+table tr th {
+    border: 1px solid #494343;
+    color: black;
+}
+th {
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    color: #000;
+}
+table thead tr{
+    margin-right: 10px;
+}
+tbody{
+    position: absolute;
+    margin-top: 28px;
+    right: 930px;
+    padding: 10px;
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box; 
+    background-color: #e6e6e6;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Seção de localização */
 
 .localizacao{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Home\ Agenda\ Sobre\ mim\ Barbearia\ \(1\).png);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/Home\ Agenda\ Sobre\ mim\ Barbearia\ \(1\).png);
     background-size: cover;
     background-position: center;
     margin: -8px;
@@ -250,6 +413,17 @@ td {
     z-index: 1;
     transition: background-color 0.3s ease;
     animation: pulsar 1s infinite;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 #bt-loc:hover{
     background-color: #000000;
@@ -334,18 +508,16 @@ td {
     }
     
     .delete-feedback-button {
-        background-color: red;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left:1200px ;
+        border:none;
+        background-color: #f4f4f4;
         cursor: pointer;
-        margin: 10px auto;
+        opacity: 20%;
     }
     
-    .delete-feedback-button:hover {
-        background-color: darkred;
-    }
+    
     
     /* Formulário para adicionar feedback */
     #feedback-form,
@@ -395,3 +567,27 @@ td {
     #admin-password button:hover {
         background-color: #A0522D;
     }
+
+
+    /* botao rola pra cima */
+
+#scrollToTopBtn{
+    background-color: #31313100;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+#scrollToTopBtn:hover{
+    background-color: rgb(155, 155, 155);
+}
