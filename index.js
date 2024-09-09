@@ -1,4 +1,6 @@
 // Documento js para funções
+
+// Agenda
 document.addEventListener("DOMContentLoaded", function() {
     const btAgenda = document.getElementById("bt-agenda");
     const btAgenda2 = document.getElementById("bt-agenda2");
@@ -176,9 +178,42 @@ document.addEventListener("DOMContentLoaded", function() {
     generateDays();
     generateCalendar(currentMonth, currentYear);
 });
+// Fim agenda
 
+// Configuração do form de agendamento
+document.getElementById('bt-agenda').addEventListener('click', function() {
+    const nome = document.getElementById('nome-agenda').value;
+    const data = new Date(document.getElementById('data-agendamento').value);
+    const hora = document.getElementById('hora').value;
+    const obs = document.getElementById('comentario').value;
 
+    // Verifica se todos os campos estão preenchidos
+    if (nome && hora && data) {
+        // Define o intervalo de horário disponível
+        const horaMinima = "14:00";
+        const horaMaxima = "19:00";
+        
+        // Valida o horário
+        if (horaMinima <= hora && hora <= horaMaxima) {
+            const opcoes = { day: 'numeric', month: 'long', year: 'numeric' };
+            const dataFormatada = data.toLocaleDateString('pt-BR', opcoes);
 
+            // Monta a mensagem de envio
+            const mensagem = `Olá, meu nome é ${nome}. Gostaria de agendar um horário no dia ${dataFormatada} às ${hora}. Poderia verificar se o dia e horário estão disponíveis, por favor? ${obs}`;
+
+            // Link de envio para WhatsApp
+            const numeroWhatsapp = '5531982283547'; // Remova o + do número
+            const linkWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+
+            // Redireciona para WhatsApp
+            window.open(linkWhatsapp, '_blank');
+        } else {
+            alert('O horário deve estar entre 14:00 e 19:00.');
+        }
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+});
 
 
 

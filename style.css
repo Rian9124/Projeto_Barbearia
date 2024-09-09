@@ -1,13 +1,10 @@
-body{
+body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/fotos-premium/grande-conjunto-de-ferramentas-de-barbeiro-preto-profissional-conceito-de-cabeleireiro-de-barbearia_275559-24793.jpg?w=950);
-    background-size: contain;
+    background-size: contain; /* Mudei para 'cover' para garantir que cubra toda a tela */
     background-repeat: no-repeat;
 }
-.linha{
-    margin: 0;
-}
-    /* Home */
-.HOME header ul{
+/* Home */
+.HOME header ul {
     background-color: black;
     color: #ED8B00;
     display: flex;
@@ -16,32 +13,37 @@ body{
     list-style: none;
     padding: 15px;
     margin: -8px;
-    font-family: 'SUSE',sans-serif;
+    font-family: 'SUSE', sans-serif;
 }
-#instagram{
+
+#instagram {
     position: absolute;
 }
-#lg-pr{
+
+#lg-pr {
     position: absolute;
     left: 150px;
     top: 200px;
 }
-#logo_1{
+
+#logo_1 {
     margin-left: 705px;
     margin-top: 160px;
 }
-section .logo_1 #text_titulo{
-    font-family: 'ITC Benguiat Std',sans-serif;
+
+section .logo_1 #text_titulo {
+    font-family: 'ITC Benguiat Std', sans-serif;
     color: #ED8B00;
     font-size: 70px;
-    top: 281px ;
+    top: 281px;
     left: 655px;
     position: absolute;
     text-align: center;
     letter-spacing: 5px;
     line-height: 60px;
 }
-.cabecalho-agenda{
+
+.cabecalho-agenda {
     background-color: black;
     color: #ED8B00;
     display: flex;
@@ -50,32 +52,38 @@ section .logo_1 #text_titulo{
     list-style: none;
     padding: 15px;
     margin: -8px;
-    font-family: 'SUSE',sans-serif;
+    font-family: 'SUSE', sans-serif;
 }
-header ul li a{
+
+header ul li a {
     color: #ED8B00;
     transition: 0.80 ease;
     text-decoration: none;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     padding: 20px;
     background-color: rgb(255, 255, 255);
 }
-.secao-conversao{
-    background: rgb(255,255,255);
-    background: linear-gradient(181deg, rgba(255,255,255,1) 75%, rgba(0,0,0,1) 100%);
+
+.secao-conversao {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(181deg, rgba(255, 255, 255, 1) 75%, rgba(0, 0, 0, 1) 100%);
     margin: -8px;
     margin-top: -18px;
 }
-#titulo-3{
-  display: flex;
-  justify-content: center; 
-  text-align: center;
-  flex-direction: column;
+
+#titulo-3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
-#text-lr{
+
+#text-lr {
     color: #ED8B00;
 }
+
 
 
 
@@ -92,27 +100,31 @@ header ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .titulo-2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #titulo-2 {
     padding-right: 10px;
     font-size: 45px;
 }
+
 .lg-bt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(260deg, rgba(0,0,0,1) 41%, rgba(255,0,0,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(260deg, rgba(0, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 100%);
     border-radius: 5px;
     margin-top: 30px;
     margin-left: 530px;
     padding: 260px 320px;
     box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
 }
+
 #icone-whatsapp {
     position: absolute;
     top: 1250px;
@@ -125,29 +137,35 @@ header ul li a:hover{
     left: 650px;
     padding-top: 160px;
 }
-.form-agendamento{
+
+.form-agendamento {
     font-size: 20px;
     color: #ffffff;
-    text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
-input, textarea {
-    border: 2px solid #333; 
-    border-radius: 5px; 
+
+input,
+textarea {
+    border: 2px solid #333;
+    border-radius: 5px;
     padding: 10px;
     font-size: 16px;
     background-color: #f9f9f9;
 }
+
 input[type="date"] {
-    position:relative;
+    position: relative;
     z-index: 10;
 }
+
 input[type="time"] {
-    position:relative;
+    position: relative;
     z-index: 10;
 }
+
 #info-whatapp {
     position: absolute;
     bottom: 350px;
@@ -158,12 +176,14 @@ input[type="time"] {
     border-radius: 5px;
     text-align: center;
 }
-#nome-agenda{
+
+#nome-agenda {
     padding: 10px;
     padding-right: 100px;
     border-radius: 5px;
     border: 2px solid #000000;
 }
+
 #bt-agenda {
     position: absolute;
     left: 940px;
@@ -183,9 +203,11 @@ input[type="time"] {
     color: white;
     box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
 }
+
 .calendario-pai {
     display: flex;
 }
+
 .calendario {
     position: absolute;
     background-color: #FF8C00;
@@ -193,6 +215,7 @@ input[type="time"] {
     margin-left: 800px;
     padding: 230px 190px;
 }
+
 #bt-agenda2 {
     position: absolute;
     margin-top: 10px;
@@ -201,17 +224,20 @@ input[type="time"] {
     border: none;
     cursor: pointer;
 }
+
 #calendar-container {
     display: none;
 }
-#barbericon{
+
+#barbericon {
     display: inline-block;
     position: absolute;
     left: 962px;
     top: 1285px;
     transform: rotate(-1deg);
 }
-#text-calendario{
+
+#text-calendario {
     position: relative;
     text-align: center;
     right: 468px;
@@ -231,6 +257,7 @@ input[type="time"] {
     justify-content: center;
     z-index: 1000;
 }
+
 #login-screen label {
     display: block;
     margin-bottom: 10px;
@@ -242,13 +269,16 @@ input[type="time"] {
     background-color: #FF8C00;
     padding: 10px;
     color: #000;
-    position:relative;
+    position: relative;
     z-index: 10;
 }
+
 #calendar.selected {
-    background-color: green; /* Cor verde para dias selecionados */
+    background-color: green;
+    /* Cor verde para dias selecionados */
     color: white;
 }
+
 #page-title {
     display: flex;
     justify-content: center;
@@ -258,11 +288,13 @@ input[type="time"] {
 #days-container {
     margin: 10px 0;
 }
+
 #days {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
+
 .day {
     width: 40px;
     height: 40px;
@@ -272,15 +304,18 @@ input[type="time"] {
     cursor: pointer;
     border: 1px solid #ddd;
 }
+
 .day.selected {
     background-color: red;
     color: white;
 }
+
 #calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
 }
+
 #calendar div {
     padding: 10px;
     background-color: #dbdbdb;
@@ -288,18 +323,22 @@ input[type="time"] {
     text-align: center;
     cursor: pointer;
 }
+
 #calendar div.selected {
     background-color: red;
     color: rgb(255, 255, 255);
 }
+
 #time-options {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 #time-options input {
     width: 100px;
 }
+
 .config-agend {
     font-size: 20px;
     margin-left: 200px;
@@ -314,17 +353,21 @@ input[type="time"] {
     left: 80px;
     transition: background-color 0.3s ease;
 }
+
 table {
     border-collapse: collapse;
 }
+
 table tr th {
     border: 1px solid #494343;
     color: black;
 }
+
 th {
     background-color: #e6e6e6;
     padding: 10px;
 }
+
 td {
     padding: 15px;
     text-align: center;
@@ -332,17 +375,19 @@ td {
     cursor: pointer;
     color: #000;
 }
-table thead tr{
+
+table thead tr {
     margin-right: 10px;
 }
-tbody{
+
+tbody {
     position: absolute;
     margin-top: 28px;
     right: 930px;
     padding: 10px;
     background-clip: border-box;
     background-clip: padding-box;
-    background-clip: content-box; 
+    background-clip: content-box;
     background-color: #e6e6e6;
 }
 
@@ -358,80 +403,92 @@ tbody{
 
 /* Seção de localização */
 
-.localizacao{
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/Home\ Agenda\ Sobre\ mim\ Barbearia\ \(1\).png);
+.localizacao {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/Home\ Agenda\ Sobre\ mim\ Barbearia\ \(1\).png);
     background-size: cover;
     background-position: center;
     margin: -8px;
     margin-top: -18px;
     overflow: hidden;
 }
-.loc{
+
+.loc {
     display: flex;
 }
-.loc-img-text{
+
+.loc-img-text {
     position: absolute;
     padding-top: 150px;
     padding-left: 240px;
 }
-#titulo-loc{
+
+#titulo-loc {
     color: white;
     font-size: 40px;
-    text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
-.bt-click{
+
+.bt-click {
     position: relative;
     display: inline-block;
     padding-top: 30px;
 }
-.loc-img-bt{
+
+.loc-img-bt {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
     padding-left: 800px;
 }
-#img-slide{
+
+#img-slide {
     position: relative;
     overflow: hidden;
     right: -100%;
     opacity: 0;
     transition: all 0.5s ease-out;
 }
-#bt-loc{
+
+#bt-loc {
     background-color: #ED8B00;
     color: rgb(0, 0, 0);
     border-radius: 30px;
     border: 1px solid black;
     padding: 18px 50px;
     font-size: 25px;
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
     z-index: 1;
     transition: background-color 0.3s ease;
     animation: pulsar 1s infinite;
 }
+
 @keyframes pulsar {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
-#bt-loc:hover{
+
+#bt-loc:hover {
     background-color: #000000;
     color: white;
 }
-#click{
+
+#click {
     position: absolute;
-    left: 200px;    
+    left: 200px;
     right: 1%;
     top: 40%;
     transform: translateY(-50%);
@@ -439,139 +496,139 @@ tbody{
     animation: pulsar 1s infinite;
 }
 
-    /* Feedback */
-    
-    .feedback-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 100px;
-        margin: -8px;
-        background-color: #f4f4f4;
-    }
-    
-    .fed {
-        text-align: center;
-    }
-    
-    .feedback-carousel {
-        display: flex;
-        overflow: hidden;
-        width: 600px;
-        margin: 0 auto;
-        position: relative;
-        height: 200px;
-    }
-    
-    .feedback-card {
-        background-color: #707070;
-        color: rgb(255, 255, 255);
-        padding: 20px;
-        border-radius: 10px;
-        width: 200px;
-        text-align: center;
-        flex-shrink: 0;
-        margin: 5px;
-        cursor: pointer;
-    }
-    
-    .feedback-card.selected {
-        border: 2px solid #FFD700;
-    }
-    
-    .stars {
-        font-size: 20px;
-        color: #ffcc00;
-    }
-    
-    .name {
-        margin-top: 10px;
-    }
-    
-    .add-feedback-button {
-        background-color: #FFA500;
-        color: white;
-        font-size: 24px;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
-        cursor: pointer;
-    }
-    
-    .add-feedback-button:hover {
-        background-color: #FF8C00;
-    }
-    
-    .delete-feedback-button {
-        position: absolute;
-        margin-bottom: 450px;
-        margin-left:1200px ;
-        border:none;
-        background-color: #f4f4f4;
-        cursor: pointer;
-        opacity: 20%;
-    }
-    
-    
-    
-    /* Formulário para adicionar feedback */
-    #feedback-form,
-    #admin-password {
-        background-color: #ffffff;
-        border: 1px solid #cccccc;
-        padding: 20px;
-        border-radius: 10px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #feedback-form.hidden,
-    #admin-password.hidden {
-        display: none;
-    }
-    
-    #feedback-form textarea,
-    #feedback-form input,
-    #feedback-form select,
-    #admin-password input {
-        margin: 10px 0;
-        padding: 10px;
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    #feedback-form button,
-    #admin-password button {
-        background-color: #8B4513;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 5px;
-    }
-    
-    #feedback-form button:hover,
-    #admin-password button:hover {
-        background-color: #A0522D;
-    }
+/* Feedback */
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    margin: -8px;
+    background-color: #f4f4f4;
+}
+
+.fed {
+    text-align: center;
+}
+
+.feedback-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+}
+
+.feedback-card {
+    background-color: #707070;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.feedback-card.selected {
+    border: 2px solid #FFD700;
+}
+
+.stars {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.add-feedback-button {
+    background-color: #FFA500;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.add-feedback-button:hover {
+    background-color: #FF8C00;
+}
+
+.delete-feedback-button {
+    position: absolute;
+    margin-bottom: 450px;
+    margin-left: 1200px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    opacity: 20%;
+}
 
 
-    /* botao rola pra cima */
 
-#scrollToTopBtn{
+/* Formulário para adicionar feedback */
+#feedback-form,
+#admin-password {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback-form.hidden,
+#admin-password.hidden {
+    display: none;
+}
+
+#feedback-form textarea,
+#feedback-form input,
+#feedback-form select,
+#admin-password input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#feedback-form button,
+#admin-password button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#feedback-form button:hover,
+#admin-password button:hover {
+    background-color: #A0522D;
+}
+
+
+/* botao rola pra cima */
+
+#scrollToTopBtn {
     background-color: #31313100;
     width: 70px;
     height: 70px;
@@ -588,6 +645,7 @@ tbody{
     right: 30px;
 
 }
-#scrollToTopBtn:hover{
+
+#scrollToTopBtn:hover {
     background-color: rgb(155, 155, 155);
 }
