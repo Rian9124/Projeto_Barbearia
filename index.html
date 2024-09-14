@@ -7,22 +7,32 @@
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/itc-benguiat-std? styles=64884">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:WGHT@600&display=swap">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-media.css">
         <link rel="shortcut icon" href="imagens/v-barber-shop-high-resolution-logo-white.png" type="image/x-icon">
-        <title>Barbearia</title>
+        <title>V'BARBER SHOP</title>
     </head>
     
     <body>
+
+        
+        <section class="section-teste">
+            <!-- Animação de abertura com logo -->
+              <div class="logo-container">
+                <h1 class="bem-vindo">BEM VINDO À BARBEARIA <br><span id="text-lr"> VICTOR BARBER SHOP</span></h1>
+                <img src="imagens/v-barber-shop-high-resolution-logo-white.png" alt="Logo da Barbearia" class="logo" width="600px">
+              </div>
+        </section>
         <!-- Seção Home -->
         <section class="HOME">
             
         <!-- Cabeçalho principal -->
-        <header class="cabecalho">
+        <header class="cabecalho" id="cabecalho">
             <ul>
                 <li><a href="#HOME">HOME</a></li>
+                <li><a href="#SOBRE_MIM">SOBRE MIM</a></li>
                 <li><a href="#AGENDA">AGENDA</a></li>
                 <li><a href="#LOCALIZAÇÃO">LOCALIZAÇÃO</a></li>
                 <li><a href="#FEEDBACK">FEEDBACK</a></li>
-                <li><a href="#SOBRE_MIM">SOBRE MIM</a></li>
                 <li>
                     <a href="https://www.instagram.com/01vg_do_corte?igsh=cjMyamtjZThodDU=" id="instagram" target="_blank">
                         <img src="https://th.bing.com/th/id/R.e323a1c490acd8ad3f84d1d1a6d78c9a?rik=pefjyka5%2fJ2tYA&pid=ImgRaw&r=0" width="30px">
@@ -172,7 +182,7 @@
 
     <!-- Seção de localização -->
     <section class="localizacao" id="LOCALIZAÇÃO">
-        <hr color="black" size="5px" class="linha">
+        <hr color="black" size="5px" class="linha-mod">
         <div class="loc">
             <div class="loc-img-text">
                 <img src="imagens/local 3.png" alt="localizacao" width="350px">
@@ -181,7 +191,7 @@
             <div class="loc-img-bt">
                 <img src="imagens/Cópia de Home Agenda Sobre mim Barbearia.png" width="500px" id="img-slide">
                 <div class="bt-click">
-                    <button id="bt-loc">Ver no mapa</button>
+                    <a href="https://www.google.com.br/maps/@-19.8886509,-43.8524774,3a,75y,82.67h,77.96t/data=!3m6!1e1!3m4!1sFtoExbey6naqB9eAdouraQ!2e0!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><button id="bt-loc">Ver no mapa</button></a>
                     <img src="imagens/click.png" width="100px" id="click">
                 </div>
             </div>
@@ -191,6 +201,7 @@
 
     <!-- Seção Feedback -->
     <section class="feedback-container" id="FEEDBACK">
+        <br><br><br><br><br>
         <h1>Feedback</h1>
         <div class="feedback-carousel">
             <div class="feedback-card" onclick="selectCard(this)">
@@ -211,7 +222,8 @@
         </div>
         <div class="add-feedback-button" onclick="showFeedbackForm()">+</div>
         <button class="delete-feedback-button" id="img-lixeira" onclick="showAdminPasswordForm()"><img
-                src="lixeira-de-reciclagem.png" width="35px"></button>
+                src="imagens/lixeira-de-reciclagem.png" width="35px"></button>
+        <br><br><br><br><br>
     </section>
 
     <!-- Formulário para adicionar feedback -->

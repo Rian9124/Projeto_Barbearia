@@ -2,7 +2,78 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/fotos-premium/grande-conjunto-de-ferramentas-de-barbeiro-preto-profissional-conceito-de-cabeleireiro-de-barbearia_275559-24793.jpg?w=950);
     background-size: contain; /* Mudei para 'cover' para garantir que cubra toda a tela */
     background-repeat: no-repeat;
+    overflow: hidden;
 }
+
+.section-teste{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.section-teste .logo-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    transition: background-color 3s ease-in-out;
+}
+
+.section-teste .bem-vindo {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-100vh);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.section-teste .bem-vindo-animado {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-teste .bem-vindo-saindo {
+    transform: translateX(100vw);
+    transition: transform 2s ease-in-out;
+}
+
+.section-teste .logo {
+    width: 150px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.section-teste .logo-animada {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.conteudo {
+    text-align: center;
+    padding: 50px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.conteudo.revelando {
+    opacity: 1;
+}
+
+.logo-container.revelar-fundo {
+    background-color: #f4f4f4;
+}
+
+
 /* Home */
 .HOME header ul {
     background-color: black;
@@ -127,7 +198,7 @@ header ul li a:hover {
 
 #icone-whatsapp {
     position: absolute;
-    top: 1250px;
+    top: 1280px;
     margin-left: 150px;
 }
 
@@ -158,7 +229,7 @@ textarea {
 
 input[type="date"] {
     position: relative;
-    z-index: 10;
+    z-index: 1000;
 }
 
 input[type="time"] {
@@ -233,14 +304,14 @@ input[type="time"] {
     display: inline-block;
     position: absolute;
     left: 962px;
-    top: 1285px;
+    top: 1370px;
     transform: rotate(-1deg);
 }
 
 #text-calendario {
     position: relative;
     text-align: center;
-    right: 468px;
+    right: 470px;
 }
 
 /* Tela de Login */
@@ -349,7 +420,7 @@ input[type="time"] {
 .cd-lg-bt {
     position: absolute;
     font-size: 15px;
-    top: 1500px;
+    top: 1520px;
     left: 80px;
     transition: background-color 0.3s ease;
 }
@@ -383,13 +454,23 @@ table thead tr {
 tbody {
     position: absolute;
     margin-top: 28px;
-    right: 930px;
+    right: 936px;
     padding: 10px;
     background-clip: border-box;
     background-clip: padding-box;
     background-clip: content-box;
     background-color: #e6e6e6;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -410,6 +491,10 @@ tbody {
     margin: -8px;
     margin-top: -18px;
     overflow: hidden;
+}
+.linha-mod{
+    margin: 0;
+    padding: 0;
 }
 
 .loc {
@@ -522,7 +607,7 @@ tbody {
 }
 
 .feedback-card {
-    background-color: #707070;
+    background-color: #1c4881;
     color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
@@ -540,6 +625,10 @@ tbody {
 .stars {
     font-size: 20px;
     color: #ffcc00;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .name {

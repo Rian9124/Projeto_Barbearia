@@ -1,0 +1,56 @@
+@media (min-width:1559px){
+    section .logo_1 #text_titulo {
+        top: 281px;
+        left: 740px;
+    }
+    #lg-pr {
+        position: absolute;
+        left: 150px;
+        top: 250px;
+    }
+    .cd-lg-bt {
+        top: 1533px;
+        left: 80px;
+    }
+    tbody {
+        right: 1146px;
+    }
+    #text-calendario {
+        right: 570px;
+    }
+    #icone-whatsapp {
+        top: 1300px;
+        margin-left: 140px;
+    }
+    input[type="text"] {
+        position: relative;
+        z-index: 10;
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapers.com/images/hd/focused-barber-pole-9xq2jobt9pxmuuwe.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    #lg-pr {
+        left: 50px;
+        top: 210px;
+        width: 250px;
+    }
+    section .logo_1 #text_titulo {
+        top: 235px;
+        left: 365px;
+        position: absolute;
+        font-size: 50px;
+        letter-spacing: 5px;
+        line-height: 50px;
+    }
+    #logo_1 {
+        margin-left: 385px;
+        margin-top: 100px;
+        width: 300px;
+    }
+   
+}

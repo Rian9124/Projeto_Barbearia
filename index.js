@@ -1,5 +1,63 @@
 // Documento js para funções
 
+// função para a animação de abertura do site 
+window.onload = function() {
+    const logo = document.querySelector('.logo');
+    const conteudo = document.querySelector('.conteudo');
+    const bemVindo = document.querySelector('.bem-vindo');
+    const logoContainer = document.querySelector('.logo-container');
+
+    // Reinicializa o estado da logo e do texto quando o site é carregado novamente
+    logo.style.display = 'block';
+    bemVindo.style.display = 'block';
+    logoContainer.style.display = 'flex'; // Mostra o container
+
+    // Aparece o texto e a logo com a animação
+    setTimeout(() => {
+        bemVindo.classList.add('bem-vindo-animado'); // Aparece o texto "BEM VINDO" descendo de cima
+        logo.classList.add('logo-animada'); // Aparece a logo
+    }, 500);
+
+    // Após 3 segundos, a logo sai para a esquerda e o texto "BEM VINDO" sai para a direita
+    setTimeout(() => {
+        logo.style.transform = 'translateX(-100vw)'; // Faz a logo sair para a esquerda
+        logo.style.transition = 'transform 2s ease-in-out'; // Anima a saída para a esquerda
+
+        bemVindo.classList.add('bem-vindo-saindo'); // Faz o texto sair para a direita
+
+        // Revela o conteúdo gradualmente enquanto a logo está saindo
+        conteudo.classList.add('revelando'); // Aplica a transição de opacidade no conteúdo
+
+        // Muda o fundo da página gradualmente enquanto a animação acaba
+        logoContainer.classList.add('revelar-fundo');
+
+        // Remove a logo e o seu container após a transição
+        setTimeout(() => {
+            logoContainer.style.display = 'none'; // Remove a logo container
+            document.body.style.overflow = 'auto'; // Permite rolar a página após a animação
+        }, 2000); // Espera 2 segundos para remover a logo
+    }, 3000); // 3 segundos antes de começar a sair a logo e o texto
+};
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
 // Agenda
 document.addEventListener("DOMContentLoaded", function() {
     const btAgenda = document.getElementById("bt-agenda");
@@ -31,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function() {
     btAgenda2.addEventListener("click", function() {
         loginScreen.style.display = "flex";
     });
-
+    
+    // criação da tela de senha do agendamento
     document.getElementById("login-button").addEventListener("click", function() {
         const password = document.getElementById("password").value;
         if (password === "1234") {
@@ -179,6 +238,44 @@ document.addEventListener("DOMContentLoaded", function() {
     generateCalendar(currentMonth, currentYear);
 });
 // Fim agenda
+
+
+
+
+// Configuração do form de agendamento
+document.getElementById('bt-agenda').addEventListener('click', function() {
+    const nome = document.getElementById('nome-agenda').value;
+    const data = new Date(document.getElementById('data-agendamento').value);
+    const hora = document.getElementById('hora').value;
+    const obs = document.getElementById('comentario').value;
+
+    // Verifica se todos os campos estão preenchidos
+    if (nome && hora && data) {
+        // Define o intervalo de horário disponível
+        const horaMinima = "14:00";
+        const horaMaxima = "19:00";
+        
+        // Valida o horário
+        if (horaMinima <= hora && hora <= horaMaxima) {
+            const opcoes = { day: 'numeric', month: 'long', year: 'numeric' };
+            const dataFormatada = data.toLocaleDateString('pt-BR', opcoes);
+
+            // Monta a mensagem de envio
+            const mensagem = `Olá, meu nome é ${nome}. Gostaria de agendar um horário no dia ${dataFormatada} às ${hora}. Poderia verificar se o dia e horário estão disponíveis, por favor? ${obs}`;
+
+            // Link de envio para WhatsApp
+            const numeroWhatsapp = '5531982283547'; // Remova o + do número
+            const linkWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+
+            // Redireciona para WhatsApp
+            window.open(linkWhatsapp, '_blank');
+        } else {
+            alert('O horário deve estar entre 14:00 e 19:00.');
+        }
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+});
 
 // Configuração do form de agendamento
 document.getElementById('bt-agenda').addEventListener('click', function() {
