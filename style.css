@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
 }
+/* animação de iniciação */
 
 .section-teste{
     position: absolute;
@@ -72,6 +73,7 @@ body {
 .logo-container.revelar-fundo {
     background-color: #f4f4f4;
 }
+/* fim animação */
 
 
 /* Home */
@@ -154,11 +156,7 @@ header ul li a:hover {
 #text-lr {
     color: #ED8B00;
 }
-
-
-
-
-
+/* fim home */
 
 
 
