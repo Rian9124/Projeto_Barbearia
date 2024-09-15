@@ -3,6 +3,12 @@
         top: 281px;
         left: 740px;
     }
+    #logo-programador{
+        opacity: 20%;
+        position: absolute;
+        top: 15px;
+        left: 1480px;
+    }
     #lg-pr {
         position: absolute;
         left: 150px;
@@ -27,7 +33,7 @@
         z-index: 10;
     }
 }
-@media (min-width:1180px) and (max-width:1500px){
+@media (min-width:1350px) and (max-width:1500px){
     section .logo_1 #text_titulo {
         top: 281px;
         left: 600px;
@@ -49,7 +55,7 @@
         right: 930px;
     }
     #text-calendario {
-        right: 570px;
+        right: 470px;
     }
     #icone-whatsapp {
         top: 1300px;
@@ -58,6 +64,13 @@
     input[type="text"] {
         position: relative;
         z-index: 10;
+    }
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        left: 962px;
+        top: 1344px;
+        transform: rotate(-1deg);
     }
 
 }
@@ -70,23 +83,594 @@
         background-repeat: no-repeat;
         overflow: hidden;
     }
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 25px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 170px;
+        height: 250px;
+        padding: 10px;
+      }
+      header ul li{
+        padding: 10px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        top: 20px;
+        left: 140px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 70px;
+        left: 140px;
+        opacity: 30%;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
+
     #lg-pr {
-        left: 50px;
-        top: 210px;
-        width: 250px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
     }
     section .logo_1 #text_titulo {
-        top: 235px;
-        left: 365px;
+        top: 205px;
+        left: 225px;
         position: absolute;
-        font-size: 50px;
+        font-size: 80px;
         letter-spacing: 5px;
-        line-height: 50px;
+        line-height: 100px;
     }
     #logo_1 {
-        margin-left: 385px;
-        margin-top: 100px;
+        margin-left: 289px;
+        margin-top: 35px;
+        width: 400px;
+    }
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 440px;
+        margin-left:65px;
+        padding: 290px 305px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 1250px;
+        width: 300px;
+        margin-left: 450px;
+    }
+    #month-year{
+        font-size: 19px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 130px;
+        padding-top: 580px;
+    }
+    
+    #bt-agenda {
+        left: 440px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        left: 432px;
+        top: 1615px;
+        width: 350px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        right: 200px;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+    .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1200px;
+        left: 66px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:relative;
+        margin-top: 28px;
+        right: 342px;
+        padding: 10px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+    /* seção localização */
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 130px;
+        padding-left: 40px;
+    }
+    #img-loc{
+        width: 350px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 350px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 400px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@media (min-width:100px) and (max-width:699px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/tela-home932.jpg);
+        background-size: contain;
+        overflow: hidden;
+    }
+    /* Seção Agenda */
+.AGENDA {
+    /* color: white; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1000px 20px;
+        font-size: 15px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 120px;
+        padding: 10px;
+        z-index: 100;
+      }
+      header ul li{
+        padding: 5px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        width: 30px;
+        top: 10px;
+        left: 100px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        opacity: 30%;
+        width: 30px;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
+
+    #lg-pr {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+    }
+    section .logo_1 #text_titulo {
+        top: 195px;
+        left: 135px;
+        position: absolute;
+        font-size: 60px;
+        letter-spacing: 5px;
+        line-height: 60px;
+    }
+    #logo_1 {
+        margin-left: 149px;
+        margin-top: 22px;
         width: 300px;
     }
-   
+
+
+
+
+
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 480px;
+        margin-left: 25px;
+        padding: 270px 265px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #titulo-2 {
+    text-align: center;
+    font-size: 30px;
+    }
+
+    #icone-agenda{
+        margin-right: 10px;
+        width: 80px;
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 1270px;
+        width: 220px;
+        margin-left: 380px;
+    }
+    #month-year{
+        font-size: 19px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    textarea{
+        width: 370px;
+    }
+    input[type="text"]{
+        width: 150px;
+    }
+    
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 80px;
+        padding-top: 610px;
+    }
+    
+    #bt-agenda {
+        left: 190px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        max-width: 100%;
+        left: 388px;
+        top: 1583px;
+        width: 240px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        right: 120px;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+     /* Estilo da tabela */
+     .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1150px;
+        left: 36px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:absolute;
+        margin-top: 28px;
+        right: 235px;
+        padding: 10px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 113px;
+        padding-left: 20px;
+    }
+    #img-loc{
+        width: 200px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 25px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+    #bt-loc {
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 8px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 170px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 250px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .feedback-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        right: 65px;
+    }
+
+
+
+    #scrollToTopBtn {
+        background-color: #31313100;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+        bottom: 20px;
+        right: 100px;
+    
+    }
+    
+    #scrollToTopBtn:hover {
+        background-color: rgb(155, 155, 155);
+    }
 }

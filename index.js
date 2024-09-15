@@ -39,6 +39,12 @@ window.onload = function() {
     }, 3000); // 3 segundos antes de começar a sair a logo e o texto
 };
 
+
+
+// cabecalho
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('show');
+  });
   
   
   

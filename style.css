@@ -75,9 +75,13 @@ body {
 }
 /* fim animação */
 
+.telas-pequenas{
+    display: none;
+}
+
 
 /* Home */
-.HOME header ul {
+.HOME .telas-grandes ul {
     background-color: black;
     color: #ED8B00;
     display: flex;
@@ -92,6 +96,13 @@ body {
 #instagram {
     position: absolute;
 }
+#logo-programador{
+    opacity: 20%;
+    position: absolute;
+    top: 15px;
+    left: 1280px;
+}
+  
 
 #lg-pr {
     position: absolute;
@@ -157,6 +168,7 @@ header ul li a:hover {
     color: #ED8B00;
 }
 /* fim home */
+
 
 
 
