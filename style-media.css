@@ -1,4 +1,4 @@
-@media (min-width:1559px) and (max-width:1800px){
+@media (min-width:1555px) and (max-width:1800px){
     section .logo_1 #text_titulo {
         top: 281px;
         left: 740px;
@@ -15,7 +15,7 @@
         top: 250px;
     }
     .cd-lg-bt {
-        top: 1533px;
+        top: 1623px;
         left: 80px;
     }
     tbody {
@@ -25,15 +25,81 @@
         right: 570px;
     }
     #icone-whatsapp {
-        top: 1300px;
+        top: 1400px;
         margin-left: 140px;
     }
     input[type="text"] {
         position: relative;
         z-index: 10;
     }
+
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        left: 1044px;
+        top: 1442px;
+        transform: rotate(-1deg);
+    }
+
+    /* seção sobre-mim */
+    .secao-conversao {
+        background-image: url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: -8px;
+        margin-top: -18px;
+        position: relative;
+    }
+
+    .TextoSobreMim{
+        background-color: rgb(0, 0, 0);
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        margin-right: 800px;
+        text-align: justify;
+        margin-left:100px;
+        padding: 20px;
+        padding-bottom: 100px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: rgb(224, 224, 224);
+        font-family: "SUSE", sans-serif;
+        line-height: 25px;
+        z-index: 0;
+        border-style: outset;
+        border-color:rgb(161, 161, 161) ;
+
+    }
+
+    #TituloSobreMim{
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 9.6px;
+        justify-content: center;
+        display: flex;
+    }
+    #Img1{
+        position: absolute;
+        top: 215px;
+        left: 730px;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    #Img2{
+        position: absolute;
+        left: 950px;
+        top: 100px;
+        border-radius: 15px;
+        z-index: 0;
+    }
+    #TSobreMim{
+        font-size: 20px;
+    }
 }
-@media (min-width:1350px) and (max-width:1500px){
+@media (min-width:1350px) and (max-width:1550px){
     section .logo_1 #text_titulo {
         top: 281px;
         left: 600px;
@@ -68,15 +134,73 @@
     #barbericon {
         display: inline-block;
         position: absolute;
-        left: 962px;
-        top: 1344px;
+        left: 1043px;
+        top: 1414px;
+        width: 130px;
         transform: rotate(-1deg);
+    }
+     /* seção sobre-mim */
+     .secao-conversao {
+        background-image: url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: -8px;
+        margin-top: -18px;
+        position: relative;
+    }
+
+    .TextoSobreMim{
+        background-color: rgb(0, 0, 0);
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        margin-right: 800px;
+        text-align: justify;
+        margin-left:100px;
+        padding: 20px;
+        padding-bottom: 100px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: rgb(224, 224, 224);
+        font-family: "SUSE", sans-serif;
+        line-height: 25px;
+        z-index: 0;
+        border-style: outset;
+        border-color:rgb(161, 161, 161) ;
+
+    }
+
+    #TituloSobreMim{
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 9.6px;
+        justify-content: center;
+        display: flex;
+    }
+    #Img1{
+        position: absolute;
+        top: 215px;
+        left: 630px;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    #Img2{
+        position: absolute;
+        left: 850px;
+        top: 100px;
+        border-radius: 15px;
+        z-index: 0;
+    }
+    #TSobreMim{
+        font-size: 20px;
     }
 
 }
 
 
-@media (min-width:700px) and (max-width:1000px){
+@media (min-width:900px) and (max-width:1340px){
     body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapers.com/images/hd/focused-barber-pole-9xq2jobt9pxmuuwe.jpg);
         background-size: contain;
@@ -175,6 +299,63 @@
         margin-top: 35px;
         width: 400px;
     }
+     /* seção sobre-mim */
+     .secao-conversao {
+        background-image: url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: -8px;
+        margin-top: -18px;
+        position: relative;
+    }
+
+    .TextoSobreMim{
+        background-color: rgb(0, 0, 0);
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        margin-right: 800px;
+        text-align: justify;
+        margin-left:100px;
+        padding: 20px;
+        padding-bottom: 100px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: rgb(224, 224, 224);
+        font-family: "SUSE", sans-serif;
+        line-height: 25px;
+        z-index: 0;
+        border-style: outset;
+        border-color:rgb(161, 161, 161) ;
+
+    }
+
+    #TituloSobreMim{
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 9.6px;
+        justify-content: center;
+        display: flex;
+    }
+    #Img1{
+        position: absolute;
+        top: 215px;
+        left: 730px;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    #Img2{
+        position: absolute;
+        left: 950px;
+        top: 100px;
+        border-radius: 15px;
+        z-index: 0;
+    }
+    #TSobreMim{
+        font-size: 20px;
+    }
 
 
 
@@ -243,7 +424,7 @@
         position: absolute;
         left: 432px;
         top: 1615px;
-        width: 350px;
+        width: 100px;
         transform: rotate(-1deg);
     }
     
@@ -337,8 +518,328 @@
         transition: all 0.5s ease-out;
     }
 }
+@media (min-width:700px) and (max-width:899px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapers.com/images/hd/focused-barber-pole-9xq2jobt9pxmuuwe.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 25px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 170px;
+        height: 250px;
+        padding: 10px;
+      }
+      header ul li{
+        padding: 10px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        top: 20px;
+        left: 140px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 70px;
+        left: 140px;
+        opacity: 30%;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
 
-@media (min-width:100px) and (max-width:699px){
+    #lg-pr {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+    }
+    section .logo_1 #text_titulo {
+        top: 205px;
+        left: 225px;
+        position: absolute;
+        font-size: 80px;
+        letter-spacing: 5px;
+        line-height: 100px;
+    }
+    #logo_1 {
+        margin-left: 189px;
+        margin-top: 35px;
+        width: 400px;
+    }
+     /* seção sobre-mim */
+     .secao-conversao {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: -8px;
+        margin-top: -18px;
+        position: relative;
+    }
+
+    .TextoSobreMim{
+        background-color: rgb(0, 0, 0);
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        margin-right: 800px;
+        text-align: justify;
+        margin-left: 10px;
+        padding: 20px;
+        padding-bottom: 100px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: rgb(224, 224, 224);
+        font-family: "SUSE", sans-serif;
+        line-height: 25px;
+        z-index: 0;
+        border-style: outset;
+        border-color:rgb(161, 161, 161) ;
+
+    }
+
+    #TituloSobreMim{
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 9.6px;
+        justify-content: center;
+        display: flex;
+    }
+    #Img1{
+        position: absolute;
+        top: 325px;
+        left: 480px;
+        width: 250px;
+        border-radius: 15px;
+        z-index: 0;
+    }
+    #Img2{
+        position: absolute;
+        left: 480px;
+        top: 60px;
+        width: 250px;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    #TSobreMim{
+        font-size: 20px;
+    }
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 440px;
+        margin-left:65px;
+        padding: 290px 305px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 1500px;
+        width: 250px;
+        margin-left: 450px;
+    }
+    #month-year{
+        font-size: 19px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 130px;
+        padding-top: 580px;
+    }
+    
+    #bt-agenda {
+        left: 440px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        left: 544px;
+        top: 1759px;
+        width: 135px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        right: 200px;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+    .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1400px;
+        left: 66px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:relative;
+        margin-top: 28px;
+        right: 342px;
+        padding: 10px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+    /* seção localização */
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 130px;
+        padding-left: 40px;
+    }
+    #img-loc{
+        width: 350px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 40px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 350px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 400px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@media (min-width:600px) and (max-width:699px){
     body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/tela-home932.jpg);
         background-size: contain;
@@ -446,6 +947,66 @@
         width: 300px;
     }
 
+     /* seção sobre-mim */
+     .secao-conversao {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -8px;
+        margin-top: -18px;
+        position: relative;
+    }
+
+    .TextoSobreMim{
+        background-color: rgb(0, 0, 0);
+        margin-bottom: 530px;
+        width: 500px;
+        height: 400px;
+        margin-right: 800px;
+        text-align: justify;
+        margin-left: 50px;
+        padding: 20px;
+        font-size: 100px;
+        border-radius: 20px;
+        color: rgb(224, 224, 224);
+        font-family: "SUSE", sans-serif;
+        line-height: 25px;
+        z-index: 0;
+        border-style: outset;
+        border-color:rgb(161, 161, 161) ;
+
+    }
+
+    #TituloSobreMim{
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: "New Amsterdam", sans-serif;
+        letter-spacing: 9.6px;
+        justify-content: center;
+        display: flex;
+    }
+    #Img1{
+        position: absolute;
+        top: 805px;
+        left: 80px;
+        border-radius: 15px;
+        width: 280px;
+        z-index: 0;
+    }
+    #Img2{
+        position: absolute;
+        left: 270px;
+        top: 600px;
+        border-radius: 15px;
+        width: 320px;
+        z-index: 1;
+    }
+    #TSobreMim{
+        font-size: 20px;
+    }
+
 
 
 
@@ -479,8 +1040,410 @@
     }
     #icone-whatsapp {
         position: absolute;
-        top: 1270px;
-        width: 220px;
+        top: 1850px;
+        width: 250px;
+        margin-left: 400px;
+    }
+    #month-year{
+        font-size: 19px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    textarea{
+        width: 370px;
+    }
+    input[type="text"]{
+        width: 150px;
+    }
+    
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 80px;
+        padding-top: 610px;
+    }
+    
+    #bt-agenda {
+        left: 190px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        left: 439px;
+        top: 2095px;
+        width: 120px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        right: 120px;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+     /* Estilo da tabela */
+     .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1720px;
+        left: 36px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:absolute;
+        margin-top: 28px;
+        right: 317px;
+        padding: 10px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 113px;
+        padding-left: 90px;
+    }
+    #img-loc{
+        width: 200px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 25px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+    #click {
+        position: absolute;
+        left: 135px;
+        right: 1%;
+        top: 40%;
+        width: 70px;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: pulsar 1s infinite;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+    #bt-loc {
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 8px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 420px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 250px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .feedback-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        right: 65px;
+    }
+
+
+
+    #scrollToTopBtn {
+        background-color: #31313100;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+        bottom: 20px;
+        right: 100px;
+    
+    }
+    
+    #scrollToTopBtn:hover {
+        background-color: rgb(155, 155, 155);
+    }
+}
+@media (min-width:500px) and (max-width:599px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/tela-home932.jpg);
+        background-size: contain;
+        overflow: hidden;
+    }
+    /* Seção Agenda */
+.AGENDA {
+    /* color: white; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1000px 20px;
+        font-size: 15px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 120px;
+        padding: 10px;
+        z-index: 100;
+      }
+      header ul li{
+        padding: 5px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        width: 30px;
+        top: 10px;
+        left: 100px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        opacity: 30%;
+        width: 30px;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
+
+    #lg-pr {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+    }
+    section .logo_1 #text_titulo {
+        top: 195px;
+        left: 105px;
+        position: absolute;
+        font-size: 60px;
+        letter-spacing: 5px;
+        line-height: 60px;
+    }
+    #logo_1 {
+        margin-left: 149px;
+        margin-top: 30px;
+        width: 270px;
+    }
+         /* seção sobre-mim */
+         .secao-conversao {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/WallpaperSobreMimInvertido.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -8px;
+            margin-top: -18px;
+            position: relative;
+        }
+    
+        .TextoSobreMim{
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 530px;
+            width: 450px;
+            height: 330px;
+            margin-right: 800px;
+            text-align: justify;
+            margin-left: 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: rgb(224, 224, 224);
+            font-family: "SUSE", sans-serif;
+            line-height: 25px;
+            z-index: 0;
+            border-style: outset;
+            border-color:rgb(161, 161, 161) ;
+    
+        }
+    
+        #TituloSobreMim{
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "New Amsterdam", sans-serif;
+            letter-spacing: 9.6px;
+            justify-content: center;
+            display: flex;
+        }
+        #Img1{
+            position: absolute;
+            top: 600px;
+            left: 50px;
+            border-radius: 15px;
+            width: 230px;
+            z-index: 0;
+        }
+        #Img2{
+            position: absolute;
+            left: 220px;
+            top: 480px;
+            border-radius: 15px;
+            width: 270px;
+            z-index: 1;
+        }
+        #TSobreMim{
+            font-size: 15px;
+        }
+
+
+
+
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 480px;
+        margin-left: 25px;
+        padding: 270px 220px 270px 265px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #titulo-2 {
+    text-align: center;
+    font-size: 30px;
+    }
+
+    #icone-agenda{
+        margin-right: 10px;
+        width: 80px;
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 1700px;
+        width: 150px;
         margin-left: 380px;
     }
     #month-year{
@@ -532,16 +1495,16 @@
         display: inline-block;
         position: absolute;
         max-width: 100%;
-        left: 388px;
-        top: 1583px;
-        width: 240px;
+        left: 413px;
+        top: 1989px;
+        width: 100px;
         transform: rotate(-1deg);
     }
     
     #text-calendario {
         position: relative;
         text-align: center;
-        right: 120px;
+        right: 90px;
     }
 
     #bt-agenda2 {
@@ -569,16 +1532,16 @@
      .cd-lg-bt {
         position: absolute;
         font-size: 15px;
-        top: 1150px;
-        left: 36px;
+        top: 1550px;
+        left: 20px;
         transition: background-color 0.3s ease;
     }
 
     tbody {
         position:absolute;
         margin-top: 28px;
-        right: 235px;
-        padding: 10px;
+        right: 179px;
+        padding: 8px;
         background-clip: border-box;
         background-clip: padding-box;
         background-clip: content-box;
@@ -623,13 +1586,22 @@
         transition: background-color 0.3s ease;
         animation: pulsar 1s infinite;
     }
+    #click {
+        position: absolute;
+        left: 135px;
+        top: 40%;
+        width: 70px;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: pulsar 1s infinite;
+    }
 
     .loc-img-bt {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 80px;
-        padding-left: 170px;
+        padding-left: 280px;
     }
 
     #img-slide {
@@ -647,7 +1619,832 @@
         margin: 0 auto;
         position: relative;
         height: 200px;
-        right: 65px;
+        right: 10px;
+    }
+
+
+
+    #scrollToTopBtn {
+        background-color: #31313100;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+    
+    }
+    
+    #scrollToTopBtn:hover {
+        background-color: rgb(155, 155, 155);
+    }
+}
+@media (min-width:400px) and (max-width:499px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/tela-home932.jpg);
+        background-size: contain;
+        overflow: hidden;
+    }
+    /* Seção Agenda */
+.AGENDA {
+    /* color: white; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1000px 20px;
+        font-size: 15px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 120px;
+        padding: 10px;
+        z-index: 100;
+      }
+      header ul li{
+        padding: 5px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        width: 30px;
+        top: 10px;
+        left: 100px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        opacity: 30%;
+        width: 30px;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
+
+    #lg-pr {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+    }
+    section .logo_1 #text_titulo {
+        top: 195px;
+        left: 85px;
+        position: absolute;
+        font-size: 60px;
+        letter-spacing: 5px;
+        line-height: 60px;
+    }
+    #logo_1 {
+        margin-left: 129px;
+        margin-top: 30px;
+        width: 270px;
+    }
+         /* seção sobre-mim */
+         .secao-conversao {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/WallpaperSobreMimInvertido.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -8px;
+            margin-top: -18px;
+            position: relative;
+        }
+    
+        .TextoSobreMim{
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 530px;
+            width: 400px;
+            height: 370px;
+            text-align: justify;
+            margin-left: 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: rgb(224, 224, 224);
+            font-family: "SUSE", sans-serif;
+            line-height: 25px;
+            z-index: 0;
+            border-style: outset;
+            border-color:rgb(161, 161, 161) ;
+    
+        }
+    
+        #TituloSobreMim{
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "New Amsterdam", sans-serif;
+            letter-spacing: 9.6px;
+            justify-content: center;
+            display: flex;
+        }
+        #Img1{
+            position: absolute;
+            top: 670px;
+            left: 30px;
+            border-radius: 15px;
+            width: 230px;
+            z-index: 0;
+        }
+        #Img2{
+            position: absolute;
+            left: 180px;
+            top: 520px;
+            border-radius: 15px;
+            width: 270px;
+            z-index: 1;
+        }
+        #TSobreMim{
+            font-size: 15px;
+        }
+
+
+
+
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 480px;
+        margin-left: 20px;
+        padding: 270px 160px 270px 265px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #titulo-2 {
+    text-align: center;
+    font-size: 30px;
+    }
+
+    #icone-agenda{
+        margin-right: 10px;
+        width: 80px;
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 1850px;
+        width: 110px;
+        margin-left: 355px;
+    }
+    #month-year{
+        font-size: 19px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    textarea{
+        width: 340px;
+    }
+    input[type="text"]{
+        width: 150px;
+    }
+    
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 35px;
+        padding-top: 610px;
+    }
+    
+    #bt-agenda {
+        left: 190px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        max-width: 100%;
+        left: 347px;
+        top: 2028px;
+        width: 100px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        right: 60px;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+     /* Estilo da tabela */
+     .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1650px;
+        left: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:absolute;
+        margin-top: 28px;
+        right: 124px;
+        padding: 8px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 113px;
+        padding-left: 20px;
+    }
+    #img-loc{
+        width: 200px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 25px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+    #bt-loc {
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 8px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    #click {
+        position: absolute;
+        left: 135px;
+        top: 40%;
+        width: 70px;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: pulsar 1s infinite;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 200px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 250px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .feedback-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        right: 30px;
+    }
+
+
+
+    #scrollToTopBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #31313100;
+        width: 70px;
+        height: 70px;
+        padding: 0px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    
+    }
+    
+    #scrollToTopBtn:hover {
+        background-color: rgb(155, 155, 155);
+    }
+}
+@media (min-width:100px) and (max-width:399px){
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/tela-home400.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    /* Seção Agenda */
+    .AGENDA {
+        /* color: white; */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/black-notebook-black-cup-coffee-black-pencil-black-background_44344-2332.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .telas-grandes{
+        display: none;
+    }
+    /* Estilo do cabeçalho e menu */
+    .telas-pequenas{
+        display:block;
+        background-color: black;
+        color: #ED8B00;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1000px 20px;
+        font-size: 15px;
+        list-style: none;
+        padding: 30px;
+        margin: -8px;
+        font-family: 'SUSE', sans-serif;
+    }
+    
+    /* Estilo do menu de navegação */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #000000;
+        width: 120px;
+        padding: 10px;
+        z-index: 100;
+      }
+      header ul li{
+        padding: 5px;
+        list-style: none;
+      }
+      header ul li a {
+        color: #ED8B00;
+        transition: 0.80 ease;
+        text-decoration: none;
+    }
+    
+    header ul li a:hover {
+        padding: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    #instagram2 {
+        position: absolute;
+        width: 30px;
+        top: 10px;
+        left: 100px;
+    }
+    #logo-programador{
+        background-color: #000000;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        opacity: 30%;
+        width: 30px;
+    }
+      .menu-mobile {
+          display: block;
+          cursor: pointer;
+        }
+        .menu-mobile .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    
+      .menu.show {
+        display: flex;
+      }
+
+    #lg-pr {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 70px;
+    }
+    section .logo_1 #text_titulo {
+        top: 185px;
+        left: 85px;
+        position: absolute;
+        font-size: 40px;
+        letter-spacing: 5px;
+        line-height: 40px;
+    }
+    #logo_1 {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 190px;
+    }
+         /* seção sobre-mim */
+         .secao-conversao {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/WallpaperSobreMimInvertido.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -8px;
+            margin-top: -18px;
+            position: relative;
+        }
+    
+        .TextoSobreMim{
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 300px;
+            width: 300px;
+            height: 400px;
+            text-align: justify;
+            margin-left: 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: rgb(224, 224, 224);
+            font-family: "SUSE", sans-serif;
+            margin-top: 20px;
+            line-height: 25px;
+            z-index: 0;
+            border-style: outset;
+            border-color:rgb(161, 161, 161) ;
+    
+        }
+    
+        #TituloSobreMim{
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-family: "New Amsterdam", sans-serif;
+            letter-spacing: 9.6px;
+            justify-content: center;
+            display: flex;
+        }
+        #Img1{
+            position: absolute;
+            top: 580px;
+            left: 30px;
+            border-radius: 15px;
+            width: 200px;
+            z-index: 0;
+        }
+        #Img2{
+            position: absolute;
+            left: 150px;
+            top: 470px;
+            border-radius: 15px;
+            width: 200px;
+            z-index: 1;
+        }
+        #TSobreMim{
+            font-size: 13px;
+        }
+
+
+
+
+
+
+
+
+    /* seção agenda */
+
+    .lg-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
+        border-radius: 5px;
+        margin-top: 480px;
+        margin-left: 10px;
+        padding: 270px 90px 270px 265px;
+        box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
+    }
+    #titulo-2 {
+    text-align: center;
+    font-size: 25px;
+    }
+
+    #icone-agenda{
+        margin-right: 10px;
+        width: 60px;
+    }
+    #icone-whatsapp {
+        position: absolute;
+        top: 2160px;
+        width: 50px;
+        margin-left: 115px;
+        transform: rotateY(180deg);
+    }
+    #month-year{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    button {
+        background-color: #ED8B00;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+
+    }
+    textarea{
+        width: 280px;
+    }
+    input[type="text"]{
+        width: 80px;
+        font-size: 11px;
+    }
+    input[type="date"]{
+        width: 100px;
+        font-size: 13px;
+    }
+    /* Tela de Agendamento */
+    #available-times {
+        position: absolute;
+        left: 25px;
+        padding-top: 600px;
+    }
+    
+    #bt-agenda {
+        left: 140px;
+        margin-top: 213px;
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    
+    #barbericon {
+        display: inline-block;
+        position: absolute;
+        max-width: 100%;
+        left: 296px;
+        top: 1662px;
+        width: 70px;
+        transform: rotate(-1deg);
+    }
+    
+    #text-calendario {
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        right: 20px;
+    }
+
+    #info-whatapp {
+        position: absolute;
+        bottom: 340px;
+        background-color: #f9f9f9;
+        color: #000;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #bt-agenda2 {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        left: 10px;
+        background-color: #070605;
+        border: none;
+        cursor: pointer;
+    }
+    .delete-feedback-button {
+        display: none;
+        position: absolute;
+        margin-bottom: 450px;
+        margin-left: 1200px;
+        border: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+        opacity: 20%;
+    }
+
+    /* Estilo da tabela */
+     /* Estilo da tabela */
+     .cd-lg-bt {
+        position: absolute;
+        font-size: 15px;
+        top: 1250px;
+        left: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    tbody {
+        position:absolute;
+        margin-top: 28px;
+        right: 51px;
+        padding: 8px;
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        background-color: #e6e6e6;
+    }
+
+
+
+    /* Seção de localização */
+    .loc-img-text {
+        position: absolute;
+        padding-top: 163px;
+        padding-left: 20px;
+    }
+    #img-loc{
+        width: 160px;
+    }
+    #titulo-loc {
+        color: white;
+        font-size: 20px;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+
+    .bt-click {
+        position: relative;
+        display: inline-block;
+        padding-top: 30px;
+    }
+    #bt-loc {
+        background-color: #ED8B00;
+        color: rgb(0, 0, 0);
+        border-radius: 30px;
+        border: 1px solid black;
+        padding: 4px 10px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+        animation: pulsar 1s infinite;
+    }
+    #click {
+        position: absolute;
+        left: 143px;
+        top: 40px;
+        width: 40px;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: pulsar 1s infinite;
+    }
+
+    .loc-img-bt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 130px;
+    }
+
+    #img-slide {
+        position: relative;
+        overflow: hidden;
+        right: -100%;
+        width: 250px;
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    .feedback-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 280px;
+        margin: 0 auto;
+        position: relative;
+        height: 200px;
+        right: 50px;
     }
 
 
@@ -666,7 +2463,7 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         position: fixed;
         bottom: 20px;
-        right: 100px;
+        right: 20px;
     
     }
     

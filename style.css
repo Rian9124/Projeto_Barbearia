@@ -173,6 +173,69 @@ header ul li a:hover {
 
 
 
+/* seção sobre-mim */
+.secao-conversao {
+    background-image: url(imagens/WallpaperSobreMimInvertido.jpg);
+    background-size: cover;
+    margin: -8px;
+    margin-top: -18px;
+    position: relative;
+}
+
+.TextoSobreMim{
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-right: 800px;
+    text-align: justify;
+    margin-left:100px;
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(224, 224, 224);
+    font-family: "SUSE", sans-serif;
+    line-height: 25px;
+    z-index: 0;
+    border-style: outset;
+    border-color:rgb(161, 161, 161) ;
+
+}
+
+#TituloSobreMim{
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 9.6px;
+    justify-content: center;
+    display: flex;
+}
+#Img1{
+    position: absolute;
+    top: 215px;
+    left: 630px;
+    border-radius: 15px;
+    z-index: 1;
+}
+#Img2{
+    position: absolute;
+    left: 850px;
+    top: 100px;
+    border-radius: 15px;
+    z-index: 0;
+}
+#TSobreMim{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Seção Agenda */
 .AGENDA {
     color: white;
@@ -208,7 +271,7 @@ header ul li a:hover {
 
 #icone-whatsapp {
     position: absolute;
-    top: 1280px;
+    margin-top: 180px;
     margin-left: 150px;
 }
 
@@ -314,7 +377,8 @@ input[type="time"] {
     display: inline-block;
     position: absolute;
     left: 962px;
-    top: 1370px;
+    margin-top: 215px;
+    width: 130px;
     transform: rotate(-1deg);
 }
 
@@ -430,9 +494,27 @@ input[type="time"] {
 .cd-lg-bt {
     position: absolute;
     font-size: 15px;
-    top: 1520px;
+    margin-top: 180px;
     left: 80px;
     transition: background-color 0.3s ease;
+}
+#month-year{
+    font-size: 19px;
+}
+button {
+    background-color: #ED8B00;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+
 }
 
 table {
