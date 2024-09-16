@@ -83,11 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Definir os dias indisponíveis manualmente
     const manualUnavailableDays = {
-        0: [1, 10, 15,18],  // Dias indisponíveis para Janeiro (0 = Janeiro)
-        1: [5, 12, 20],  // Dias indisponíveis para Fevereiro
-        2: [3, 8, 22],   // Dias indisponíveis para Março
-        3: [7, 18, 29],  // Dias indisponíveis para Abril
-        9: [15,20,30],
+        9:  [1,3,7,9,11,15,17,21,23,25,29,31],
+        10:  [4,6,8,12,14,18,20,22,26,28],
+        11:  [1,2,4,6,10,12,16,18,20,24,25,26,30]    
     };
 
     let currentMonth = new Date().getMonth();
