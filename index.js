@@ -137,12 +137,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const firstDay = new Date(year, month).getDay();
         const lastDate = new Date(year, month + 1, 0).getDate();
         let date = 1;
-
+        const cell = document.createElement("td");
+        
         tbody.innerHTML = "";
-
+        
         for (let i = 0; i < 6; i++) {
             const row = document.createElement("tr");
-
+            
             for (let j = 0; j < 7; j++) {
                 if (i === 0 && j < firstDay) {
                     const cell = document.createElement("td");
@@ -152,11 +153,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     const cell = document.createElement("td");
                     cell.innerText = date;
-
+                    
                     if (unavailableDays[month].includes(date)) {
                         cell.classList.add("selected");
                     }
-
+                    
                     cell.addEventListener("click", function() {
                         cell.classList.toggle("selected");
                         toggleDaySelection(date);
