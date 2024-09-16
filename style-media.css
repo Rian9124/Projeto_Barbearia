@@ -141,7 +141,7 @@
     }
      /* seção sobre-mim */
      .secao-conversao {
-        background-image: url(imagens/WallpaperSobreMimInvertido.jpg);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(imagens/WallpaperSobreMimInvertido.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         margin: -8px;
