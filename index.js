@@ -81,9 +81,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const monthInput = document.getElementById("month");
     const cdLgBt = document.querySelector(".cd-lg-bt");
 
+    // Definir os dias indisponíveis manualmente
+    const manualUnavailableDays = {
+        0: [1, 10, 15,18],  // Dias indisponíveis para Janeiro (0 = Janeiro)
+        1: [5, 12, 20],  // Dias indisponíveis para Fevereiro
+        2: [3, 8, 22],   // Dias indisponíveis para Março
+        3: [7, 18, 29],  // Dias indisponíveis para Abril
+        9: [15,20,30],
+    };
+
     let currentMonth = new Date().getMonth();
     let currentYear = new Date().getFullYear();
-    let unavailableDays = loadUnavailableDays();
+    let unavailableDays = loadUnavailableDays(); // Carregar dias indisponíveis
+
 
     // Eventos para botões
     btAgenda.addEventListener("click", function() {
@@ -95,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btAgenda2.addEventListener("click", function() {
         loginScreen.style.display = "flex";
     });
-    
+
     // criação da tela de senha do agendamento
     document.getElementById("login-button").addEventListener("click", function() {
         const password = document.getElementById("password").value;
@@ -134,45 +144,53 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function generateCalendar(month, year) {
-        const firstDay = new Date(year, month).getDay();
+        const firstDay = new Date(year, month, 1).getDay();
         const lastDate = new Date(year, month + 1, 0).getDate();
         let date = 1;
-        const cell = document.createElement("td");
-        
         tbody.innerHTML = "";
-        
-        for (let i = 0; i < 6; i++) {
+    
+        // Verifique se o mês já tem dias indisponíveis
+        if (!unavailableDays[month]) {
+            unavailableDays[month] = [];
+        }
+    
+        for (let i = 0; i < 6; i++) { // 6 linhas para o calendário
             const row = document.createElement("tr");
-            
-            for (let j = 0; j < 7; j++) {
+    
+            for (let j = 0; j < 7; j++) { // 7 colunas para os dias da semana
                 if (i === 0 && j < firstDay) {
+                    // Adiciona células vazias até o primeiro dia do mês
                     const cell = document.createElement("td");
                     row.appendChild(cell);
                 } else if (date > lastDate) {
+                    // Se a data for maior que o último dia do mês, pare de adicionar células
                     break;
                 } else {
                     const cell = document.createElement("td");
                     cell.innerText = date;
-                    
+    
+                    // Marcar dias indisponíveis
                     if (unavailableDays[month].includes(date)) {
                         cell.classList.add("selected");
                     }
-                    
+    
                     cell.addEventListener("click", function() {
                         cell.classList.toggle("selected");
                         toggleDaySelection(date);
                         updateCalendarDays();
                         saveUnavailableDays();
                     });
+    
                     row.appendChild(cell);
                     date++;
                 }
             }
             tbody.appendChild(row);
         }
-
+    
         monthYearSpan.innerText = new Date(year, month).toLocaleString("pt-BR", { month: "long", year: "numeric" });
     }
+    
 
     document.getElementById("prev-month").addEventListener("click", function() {
         currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
@@ -237,6 +255,10 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!data[month]) {
                 data[month] = [];
             }
+            // Combina os dias indisponíveis manuais com os do localStorage
+            if (manualUnavailableDays[month]) {
+                data[month] = [...new Set([...data[month], ...manualUnavailableDays[month]])];
+            }
         }
         return data;
     }
@@ -245,6 +267,7 @@ document.addEventListener("DOMContentLoaded", function() {
     generateCalendar(currentMonth, currentYear);
 });
 // Fim agenda
+
 
 
 
