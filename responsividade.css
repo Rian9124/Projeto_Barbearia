@@ -2205,8 +2205,8 @@
         width: 70px;
     }
     section .logo_1 #text_titulo {
-        top: 185px;
-        left: 85px;
+        top: 175px;
+        left: 65px;
         position: absolute;
         font-size: 40px;
         letter-spacing: 5px;
@@ -2215,7 +2215,7 @@
     #logo_1 {
         margin-left: 100px;
         margin-top: 30px;
-        width: 190px;
+        width: 160px;
     }
          /* seção sobre-mim */
          .secao-conversao {
@@ -2231,10 +2231,10 @@
         .TextoSobreMim{
             background-color: rgb(0, 0, 0);
             margin-bottom: 300px;
-            width: 300px;
+            width: 280px;
             height: 400px;
             text-align: justify;
-            margin-left: 15px;
+            margin-left: 20px;
             padding: 10px 20px;
             border-radius: 20px;
             color: rgb(224, 224, 224);
@@ -2248,7 +2248,7 @@
         }
     
         #TituloSobreMim{
-            font-size: 40px;
+            font-size: 35px;
             margin-bottom: 20px;
             text-align: justify;
             font-family: "New Amsterdam", sans-serif;
@@ -2259,21 +2259,21 @@
         #Img1{
             position: absolute;
             top: 580px;
-            left: 30px;
+            left: 15px;
             border-radius: 15px;
             width: 200px;
             z-index: 0;
         }
         #Img2{
             position: absolute;
-            left: 150px;
+            left: 120px;
             top: 470px;
             border-radius: 15px;
             width: 200px;
             z-index: 1;
         }
         #TSobreMim{
-            font-size: 13px;
+            font-size: 12px;
         }
 
 
@@ -2292,9 +2292,9 @@
         background: rgb(0, 0, 0);
         background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
         border-radius: 5px;
-        margin-top: 480px;
-        margin-left: 10px;
-        padding: 270px 90px 270px 265px;
+        margin-top: 450px;
+        margin-left: 9px;
+        padding: 270px 60px 200px 265px;
         box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
     }
     #titulo-2 {
@@ -2316,13 +2316,13 @@
     }
     #month-year{
         font-size: 15px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     button {
         background-color: #ED8B00;
         border: none;
         padding: 5px 10px;
-        margin-left: 20px;
+        margin-left: 15px;
         margin-bottom: 5px;
         color: black;
         border-radius: 5px;
@@ -2335,26 +2335,42 @@
 
     }
     textarea{
-        width: 280px;
-    }
-    input[type="text"]{
-        width: 80px;
+        width: 235px;;
         font-size: 11px;
     }
+    input[type="text"]{
+        width: 58px;
+        font-size: 8px;
+    }
     input[type="date"]{
-        width: 100px;
+        width: 80px;
+        height: 10px;
         font-size: 13px;
+    }
+    input[type="time"]{
+        width: 40px;
+        height: 10px;
+        font-size: 13px;
+    }
+
+    .form-agendamento {
+        font-size: 16px;
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     }
     /* Tela de Agendamento */
     #available-times {
         position: absolute;
-        left: 25px;
-        padding-top: 600px;
+        left: 20px;
+        padding-top: 580px;
     }
     
     #bt-agenda {
-        left: 140px;
-        margin-top: 213px;
+        left: 55px;
+        margin-top: 133px;
         background-color: #ED8B00;
         color: rgb(0, 0, 0);
         border-radius: 30px;
@@ -2369,8 +2385,8 @@
         display: inline-block;
         position: absolute;
         max-width: 100%;
-        left: 296px;
-        top: 1662px;
+        left: 264px;
+        top: 1602px;
         width: 70px;
         transform: rotate(-1deg);
     }
@@ -2378,17 +2394,17 @@
     #text-calendario {
         position: relative;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         right: 0px;
     }
 
     #info-whatapp {
         position: absolute;
-        bottom: 340px;
+        bottom: 280px;
         background-color: #f9f9f9;
         color: #000;
-        padding: 15px;
-        font-size: 14px;
+        padding: 10px;
+        font-size: 13px;
         border-radius: 5px;
         text-align: center;
     }
@@ -2424,8 +2440,8 @@
     .cd-lg-bt {
         position: absolute;
         font-size: 15px;
-        top: 1450px;
-        left: 26px;
+        top: 1400px;
+        left: 16px;
         transition: background-color 0.3s ease;
     }
     tbody {
@@ -2435,21 +2451,36 @@
         background-color: #e6e6e6;
     }
 
-
-
+    
+    th {
+        background-color: #e6e6e6;
+        padding: 9.2px;
+    }
+    td {
+        padding: 14.1px;
+        text-align: center;
+        border: 1px solid #000000;
+        cursor: pointer;
+        color: #000;
+    }
+    
+    
 
     /* Seção de localização */
     .loc-img-text {
         position: absolute;
-        padding-top: 163px;
-        padding-left: 20px;
+        padding-top: 23px;
+        padding-left: 60px;
     }
     #img-loc{
-        width: 160px;
+        position: absolute;
+        width: 80px;
     }
     #titulo-loc {
+        padding-left: 80px;
+        margin-top: 30px;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: -1px -1px 0 #000,
             1px -1px 0 #000,
             -1px 1px 0 #000,
@@ -2459,14 +2490,14 @@
     .bt-click {
         position: relative;
         display: inline-block;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     #bt-loc {
         background-color: #ED8B00;
         color: rgb(0, 0, 0);
         border-radius: 30px;
         border: 1px solid black;
-        padding: 4px 10px;
+        padding: 7px 20px;
         font-size: 20px;
         cursor: pointer;
         position: relative;
@@ -2476,9 +2507,9 @@
     }
     #click {
         position: absolute;
-        left: 143px;
-        top: 40px;
-        width: 40px;
+        left: 150px;
+        top: 10px;
+        width: 60px;
         transform: translateY(-50%);
         z-index: 2;
         animation: pulsar 1s infinite;
@@ -2488,15 +2519,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
-        padding-left: 130px;
+        padding-top: 110px;
+        padding-left: 50px;
     }
 
     #img-slide {
         position: relative;
         overflow: hidden;
-        right: -100%;
-        width: 250px;
+        right: -500%;
+        width: 280px;
         opacity: 0;
         transition: all 0.5s ease-out;
     }
@@ -2507,7 +2538,7 @@
         margin: 0 auto;
         position: relative;
         height: 200px;
-        right: 50px;
+        right: 55px;
     }
 
 
