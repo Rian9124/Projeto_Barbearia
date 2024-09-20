@@ -2616,6 +2616,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         overflow: hidden;
+        height: 100%;
     }
     /* Seção Agenda */
     .AGENDA {
@@ -2633,12 +2634,11 @@
         background-color: black;
         color: #ED8B00;
         display: flex;
-        justify-content: space-around;
+        justify-content: end;
         align-items: center;
-        padding: 1000px 20px;
-        font-size: 15px;
+        font-size: 11px;
         list-style: none;
-        padding: 30px;
+        padding: 5px;
         margin: -8px;
         font-family: 'SUSE', sans-serif;
     }
@@ -2648,11 +2648,12 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 30px;
         left: 0;
         background-color: #000000;
-        width: 120px;
-        padding: 10px;
+        width: 80px;
+        height: 120px;
+        padding: 2px;
         z-index: 100;
       }
       header ul li{
@@ -2671,25 +2672,26 @@
     }
     #instagram2 {
         position: absolute;
-        width: 30px;
-        top: 10px;
-        left: 100px;
+        width: 25px;
+        top: 3px;
+        left: 25px;
     }
+
     #logo-programador{
         background-color: #000000;
         position: absolute;
-        top: 120px;
-        left: 100px;
+        top: 40px;
+        left: 50px;
         opacity: 30%;
-        width: 30px;
+        width: 25px;
     }
       .menu-mobile {
           display: block;
           cursor: pointer;
         }
         .menu-mobile .bar {
-        width: 25px;
-        height: 3px;
+        width: 20px;
+        height: 2px;
         background-color: white;
         margin: 5px 0;
         transition: 0.3s;
@@ -2702,19 +2704,21 @@
     #lg-pr {
         position: absolute;
         left: 10px;
-        top: 10px;
-        width: 70px;
+        top: 3px;
+        width: 30px;
     }
+
     section .logo_1 #text_titulo {
-        top: 133px;
-        left: 68px;
+        height: 100px;
+        top: 87px;
+        left: 60px;
         position: absolute;
-        font-size: 30px;
+        font-size: 20px;
         letter-spacing: 5px;
-        line-height: 30px;
+        line-height: 24px;
     }
     #logo_1 {
-        margin-left: 100px;
+        margin-left: 60px;
         margin-top: 0px;
         width: 100px;
     }
@@ -2732,8 +2736,8 @@
         .TextoSobreMim{
             background-color: rgb(0, 0, 0);
             margin-bottom: 200px;
-            width: 200px;
-            height: 400px;
+            width: 170px;
+            height: 390px;
             text-align: justify;
             margin-left: 15px;
             padding: 10px 20px;
@@ -2741,7 +2745,7 @@
             color: rgb(224, 224, 224);
             font-family: "SUSE", sans-serif;
             margin-top: 20px;
-            line-height: 25px;
+            line-height: 20px;
             z-index: 0;
             border-style: outset;
             border-color:rgb(161, 161, 161) ;
@@ -2760,14 +2764,14 @@
         #Img1{
             position: absolute;
             top: 540px;
-            left: 20px;
+            left: 10px;
             border-radius: 15px;
             width: 140px;
             z-index: 0;
         }
         #Img2{
             position: absolute;
-            left: 120px;
+            left: 90px;
             top: 470px;
             border-radius: 15px;
             width: 140px;
@@ -2793,29 +2797,24 @@
         background: linear-gradient(260deg, rgba(0, 0, 0, 1) 51%, rgba(255, 0, 0, 1) 100%);
         border-radius: 5px;
         margin-top: 360px;
-        margin-left: 15px;
-        padding: 270px 10px 130px 255px;
+        margin-left: 5px;
+        padding: 270px 10px 130px 225px;
         box-shadow: 0 0 15px rgba(255, 251, 251, 0.1);
     }
     #titulo-2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     }
 
     #icone-agenda{
-        margin-right: 10px;
-        width: 50px;
+        margin-right: 2px;
+        width: 40px;
     }
     #icone-whatsapp {
         display: none;
-        position: absolute;
-        top: 2160px;
-        width: 50px;
-        margin-left: 115px;
-        transform: rotateY(180deg);
     }
     #month-year{
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 15px;
     }
     button {
@@ -2836,15 +2835,15 @@
 
     }
     textarea{
-        width: 205px;;
+        width: 185px;;
         font-size: 11px;
     }
     input[type="text"]{
-        width: 58px;
-        font-size: 8px;
+        width: 40px;
+        font-size: 6px;
     }
     input[type="date"]{
-        width: 80px;
+        width: 40px;
         height: 10px;
         font-size: 13px;
     }
@@ -2865,12 +2864,12 @@
     /* Tela de Agendamento */
     #available-times {
         position: absolute;
-        left: 23px;
+        left: 13px;
         padding-top: 450px;
     }
     
     #bt-agenda {
-        left: 30px;
+        left: 15px;
         margin-top: 83px;
         background-color: #ED8B00;
         color: rgb(0, 0, 0);
@@ -2886,9 +2885,9 @@
         display: inline-block;
         position: absolute;
         max-width: 100%;
-        left: 231px;
-        top: 1312px;
-        width: 50px;
+        left: 209px;
+        top: 1247px;
+        width: 30px;
         transform: rotate(-1deg);
     }
     
@@ -2940,9 +2939,9 @@
     /* Estilo da tabela */
     .cd-lg-bt {
         position: absolute;
-        font-size: 15px;
-        top: 1200px;
-        left: 10px;
+        font-size: 11px;
+        top: 1120px;
+        left: 3px;
         transition: background-color 0.3s ease;
     }
     tbody {
@@ -2955,10 +2954,10 @@
     
     th {
         background-color: #e6e6e6;
-        padding: 7px;
+        padding: 7.40px;
     }
     td {
-        padding: 12px;
+        padding: 11px;
         text-align: center;
         border: 1px solid #000000;
         cursor: pointer;
@@ -2970,7 +2969,7 @@
     .loc-img-text {
         position: absolute;
         padding-top: 23px;
-        padding-left: 20px;
+        padding-left: 40px;
     }
     #img-loc{
         position: absolute;
@@ -3019,7 +3018,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 150px;
+        padding-top: 140px;
         padding-left: 10px;
     }
 
@@ -3027,18 +3026,18 @@
         position: relative;
         overflow: hidden;
         right: -400%;
-        width: 250px;
+        width: 230px;
         opacity: 0;
         transition: all 0.5s ease-out;
     }
     .feedback-carousel {
         display: flex;
         overflow: hidden;
-        width: 220px;
+        width: 200px;
         margin: 0 auto;
         position: relative;
-        height: 200px;
-        right: 75px;
+        height: 250px;
+        right: 80px;
     }
     .feedback-card {
         background-color: #1c4881;
