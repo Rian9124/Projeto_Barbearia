@@ -273,12 +273,13 @@ document.addEventListener("DOMContentLoaded", function() {
 // Configuração do form de agendamento
 document.getElementById('bt-agenda').addEventListener('click', function() {
     const nome = document.getElementById('nome-agenda').value;
-    const data = new Date(document.getElementById('data-agendamento').value);
+    const dataInput = document.getElementById('data-agendamento').value;
+    const data = new Date(dataInput);
     const hora = document.getElementById('hora').value;
     const obs = document.getElementById('comentario').value;
 
-    // Verifica se todos os campos estão preenchidos
-    if (nome && hora && data) {
+    // Verifica se todos os campos estão preenchidos e se a data é válida
+    if (nome && hora && dataInput && !isNaN(data.getTime())) { // Verificação correta da data
         // Define o intervalo de horário disponível
         const horaMinima = "14:00";
         const horaMaxima = "19:00";
@@ -301,9 +302,11 @@ document.getElementById('bt-agenda').addEventListener('click', function() {
             alert('O horário deve estar entre 14:00 e 19:00.');
         }
     } else {
-        alert('Por favor, preencha todos os campos.');
+        alert('Por favor, preencha todos os campos corretamente.');
     }
 });
+
+
 
 // Configuração do form de agendamento
 document.getElementById('bt-agenda').addEventListener('click', function() {

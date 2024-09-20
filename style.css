@@ -752,7 +752,9 @@ tbody {
     cursor: pointer;
     opacity: 20%;
 }
-
+.delete-feedback-button:hover{
+    background-color: #ffffff;
+}
 
 
 /* Formulário para adicionar feedback */
@@ -790,18 +792,13 @@ tbody {
 
 #feedback-form button,
 #admin-password button {
-    background-color: #8B4513;
+    background: linear-gradient(260deg, rgba(0, 0, 0, 1) 41%, rgba(255, 0, 0, 1) 100%);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
-}
-
-#feedback-form button:hover,
-#admin-password button:hover {
-    background-color: #A0522D;
 }
 
 
